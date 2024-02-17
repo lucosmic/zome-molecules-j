@@ -266,7 +266,7 @@ if(jId >= 1 && jId <= 92) {
 }
 const initialRow = tbody.rows[ initialId - 1 ];
 selectJohnsonSolid( models[ initialId - 1 ], initialRow );
-initialRow.scrollIntoView(); // Note that this scrolls the table header row out of view. That's OK for now...
+initialRow.scrollIntoView({ behavior: "smooth", block: "center" });
 
 showEdges.addEventListener("change", // use "change" here, not "click"
   () => {
