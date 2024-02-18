@@ -239,7 +239,7 @@ tfoot td {
   );
 }
 
-@media ( max-aspect-ratio: 1/1 ) {
+@media ( max-aspect-ratio: 12/10 ) {
 
   .main-grid {
     display: grid;
