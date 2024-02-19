@@ -1114,21 +1114,21 @@
     "backgroundColor": "#AFC8DC"
   },
   "camera": {
-    "width": 4.5,
-    "nearClipDistance": 0.025,
+    "width": 7.941912122124235,
+    "nearClipDistance": 1.588382424424847,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 15.88382424424847
     },
-    "viewDistance": 10,
-    "farClipDistance": 20,
+    "viewDistance": 15.88382424424847,
+    "farClipDistance": 31.76764848849694,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "fieldOfView": 4.4,
+    "fieldOfView": 28.072486935852954,
     "perspective": true,
     "stereo": false,
     "lookDirection": {
@@ -17520,21 +17520,21 @@
       "title": "Faces",
       "content": "",
       "view": {
-        "width": 4.5,
-        "nearClipDistance": 0.025,
+        "width": 7.941912122124235,
+        "nearClipDistance": 1.588382424424847,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 15.88382424424847
         },
-        "viewDistance": 10,
-        "farClipDistance": 20,
+        "viewDistance": 15.88382424424847,
+        "farClipDistance": 31.76764848849694,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "stereo": false,
         "lookDirection": {
@@ -17554,21 +17554,21 @@
       "title": "Edges",
       "content": "",
       "view": {
-        "width": 4.5,
-        "nearClipDistance": 0.025,
+        "width": 7.941912122124235,
+        "nearClipDistance": 1.588382424424847,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 15.88382424424847
         },
-        "viewDistance": 10,
-        "farClipDistance": 20,
+        "viewDistance": 15.88382424424847,
+        "farClipDistance": 31.76764848849694,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "stereo": false,
         "lookDirection": {

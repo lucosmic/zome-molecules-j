@@ -1114,22 +1114,22 @@
     "ambientColor": "#292929"
   },
   "camera": {
-    "nearClipDistance": 0.025,
+    "nearClipDistance": 3.5727208715154384,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 35.72720871515438
     },
-    "width": 4.5,
+    "width": 17.86360435757719,
     "perspective": true,
-    "viewDistance": 10,
+    "viewDistance": 35.72720871515438,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "farClipDistance": 20,
-    "fieldOfView": 4.4,
+    "farClipDistance": 71.45441743030877,
+    "fieldOfView": 28.072486935852954,
     "lookDirection": {
       "x": 0,
       "y": 0,
@@ -20548,22 +20548,22 @@
       "title": "J76 Edges",
       "content": "",
       "view": {
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 3.5727208715154384,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 35.72720871515438
         },
-        "width": 4.5,
+        "width": 17.86360435757719,
         "perspective": true,
-        "viewDistance": 10,
+        "viewDistance": 35.72720871515438,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
+        "farClipDistance": 71.45441743030877,
+        "fieldOfView": 28.072486935852954,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -20582,22 +20582,22 @@
       "title": "J76 Faces",
       "content": "",
       "view": {
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 3.5727208715154384,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 35.72720871515438
         },
-        "width": 4.5,
+        "width": 17.86360435757719,
         "perspective": true,
-        "viewDistance": 10,
+        "viewDistance": 35.72720871515438,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
+        "farClipDistance": 71.45441743030877,
+        "fieldOfView": 28.072486935852954,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -20616,22 +20616,22 @@
       "title": "J80 Edges",
       "content": "",
       "view": {
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 3.5727208715154384,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 35.72720871515438
         },
-        "width": 4.5,
+        "width": 17.86360435757719,
         "perspective": true,
-        "viewDistance": 10,
+        "viewDistance": 35.72720871515438,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
+        "farClipDistance": 71.45441743030877,
+        "fieldOfView": 28.072486935852954,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -20650,22 +20650,22 @@
       "title": "J80 Faces",
       "content": "",
       "view": {
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 3.5727208715154384,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 35.72720871515438
         },
-        "width": 4.5,
+        "width": 17.86360435757719,
         "perspective": true,
-        "viewDistance": 10,
+        "viewDistance": 35.72720871515438,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
+        "farClipDistance": 71.45441743030877,
+        "fieldOfView": 28.072486935852954,
         "lookDirection": {
           "x": 0,
           "y": 0,

@@ -1117,19 +1117,19 @@
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 35.727210453248546
     },
-    "nearClipDistance": 0.025,
+    "nearClipDistance": 3.5727210453248546,
     "perspective": true,
-    "width": 4.5,
-    "fieldOfView": 4.4,
+    "width": 17.863605226624273,
+    "fieldOfView": 28.072486935852954,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "viewDistance": 10,
-    "farClipDistance": 20,
+    "viewDistance": 35.727210453248546,
+    "farClipDistance": 71.45442090649709,
     "lookDirection": {
       "x": 0,
       "y": 0,
@@ -20424,19 +20424,19 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 35.727210453248546
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 3.5727210453248546,
         "perspective": true,
-        "width": 4.5,
-        "fieldOfView": 4.4,
+        "width": 17.863605226624273,
+        "fieldOfView": 28.072486935852954,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "farClipDistance": 20,
+        "viewDistance": 35.727210453248546,
+        "farClipDistance": 71.45442090649709,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -20458,19 +20458,19 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 35.727210453248546
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 3.5727210453248546,
         "perspective": true,
-        "width": 4.5,
-        "fieldOfView": 4.4,
+        "width": 17.863605226624273,
+        "fieldOfView": 28.072486935852954,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "farClipDistance": 20,
+        "viewDistance": 35.727210453248546,
+        "farClipDistance": 71.45442090649709,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -20492,19 +20492,19 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 35.727210453248546
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 3.5727210453248546,
         "perspective": true,
-        "width": 4.5,
-        "fieldOfView": 4.4,
+        "width": 17.863605226624273,
+        "fieldOfView": 28.072486935852954,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "farClipDistance": 20,
+        "viewDistance": 35.727210453248546,
+        "farClipDistance": 71.45442090649709,
         "lookDirection": {
           "x": 0,
           "y": 0,

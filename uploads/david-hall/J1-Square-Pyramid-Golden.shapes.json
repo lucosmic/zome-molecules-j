@@ -1114,22 +1114,22 @@
     "ambientColor": "#292929"
   },
   "camera": {
-    "width": 12.5,
+    "width": 6.324555327612499,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 25
+      "z": 12.649110655224998
     },
-    "farClipDistance": 50,
-    "fieldOfView": 17.024865344407683,
+    "farClipDistance": 25.298221310449996,
+    "fieldOfView": 28.072486935852954,
     "perspective": true,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "viewDistance": 25,
-    "nearClipDistance": 0.1,
+    "viewDistance": 12.649110655224998,
+    "nearClipDistance": 1.2649110655225,
     "stereo": false,
     "lookDirection": {
       "x": 0,
@@ -15206,22 +15206,22 @@
       "title": "Edges",
       "content": "",
       "view": {
-        "width": 12.5,
+        "width": 6.324555327612499,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 25
+          "z": 12.649110655224998
         },
-        "farClipDistance": 50,
-        "fieldOfView": 17.024865344407683,
+        "farClipDistance": 25.298221310449996,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 25,
-        "nearClipDistance": 0.1,
+        "viewDistance": 12.649110655224998,
+        "nearClipDistance": 1.2649110655225,
         "stereo": false,
         "lookDirection": {
           "x": 0,
@@ -15240,22 +15240,22 @@
       "title": "Faces",
       "content": "",
       "view": {
-        "width": 12.5,
+        "width": 6.324555327612499,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 25
+          "z": 12.649110655224998
         },
-        "farClipDistance": 50,
-        "fieldOfView": 17.024865344407683,
+        "farClipDistance": 25.298221310449996,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 25,
-        "nearClipDistance": 0.1,
+        "viewDistance": 12.649110655224998,
+        "nearClipDistance": 1.2649110655225,
         "stereo": false,
         "lookDirection": {
           "x": 0,

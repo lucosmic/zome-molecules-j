@@ -1114,22 +1114,22 @@
     "ambientColor": "#292929"
   },
   "camera": {
-    "width": 4.5,
+    "width": 12.944271892,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 25.888543784
     },
-    "fieldOfView": 4.4,
+    "fieldOfView": 28.072486935852954,
     "perspective": true,
-    "viewDistance": 10,
-    "farClipDistance": 20,
+    "viewDistance": 25.888543784,
+    "farClipDistance": 51.777087568,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "nearClipDistance": 0.025,
+    "nearClipDistance": 2.5888543784,
     "stereo": false,
     "upDirection": {
       "x": 0,
@@ -16238,22 +16238,22 @@
       "title": "Faces",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 12.944271892,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 25.888543784
         },
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
-        "viewDistance": 10,
-        "farClipDistance": 20,
+        "viewDistance": 25.888543784,
+        "farClipDistance": 51.777087568,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.5888543784,
         "stereo": false,
         "upDirection": {
           "x": 0,
@@ -16272,22 +16272,22 @@
       "title": "Edges",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 12.944271892,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 25.888543784
         },
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
-        "viewDistance": 10,
-        "farClipDistance": 20,
+        "viewDistance": 25.888543784,
+        "farClipDistance": 51.777087568,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.5888543784,
         "stereo": false,
         "upDirection": {
           "x": 0,

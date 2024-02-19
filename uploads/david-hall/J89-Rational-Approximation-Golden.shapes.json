@@ -466,22 +466,22 @@
     "backgroundColor": "#AFC8DC"
   },
   "camera": {
-    "width": 4.5,
+    "width": 9.643154423139299,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 19.286308846278597
     },
-    "nearClipDistance": 0.025,
-    "viewDistance": 10,
+    "nearClipDistance": 1.92863088462786,
+    "viewDistance": 19.286308846278597,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "farClipDistance": 20,
+    "farClipDistance": 38.572617692557195,
     "perspective": true,
-    "fieldOfView": 4.4,
+    "fieldOfView": 28.072486935852954,
     "upDirection": {
       "x": 0,
       "y": 1,
@@ -3933,22 +3933,22 @@
       "title": "Faces",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 9.643154423139299,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 19.286308846278597
         },
-        "nearClipDistance": 0.025,
-        "viewDistance": 10,
+        "nearClipDistance": 1.92863088462786,
+        "viewDistance": 19.286308846278597,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "farClipDistance": 20,
+        "farClipDistance": 38.572617692557195,
         "perspective": true,
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "upDirection": {
           "x": 0,
           "y": 1,
@@ -3967,22 +3967,22 @@
       "title": "Edges",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 9.643154423139299,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 19.286308846278597
         },
-        "nearClipDistance": 0.025,
-        "viewDistance": 10,
+        "nearClipDistance": 1.92863088462786,
+        "viewDistance": 19.286308846278597,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "farClipDistance": 20,
+        "farClipDistance": 38.572617692557195,
         "perspective": true,
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "upDirection": {
           "x": 0,
           "y": 1,

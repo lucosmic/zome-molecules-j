@@ -466,7 +466,7 @@
     ]
   },
   "camera": {
-    "width": 4.5,
+    "width": 10.973734376717113,
     "stereo": false,
     "lookDirection": {
       "x": 0,
@@ -483,15 +483,15 @@
       "y": 0,
       "z": 0
     },
-    "viewDistance": 10,
-    "nearClipDistance": 0.025,
-    "farClipDistance": 20,
-    "fieldOfView": 4.4,
+    "viewDistance": 21.947468753434226,
+    "nearClipDistance": 2.1947468753434225,
+    "farClipDistance": 43.89493750686845,
+    "fieldOfView": 28.072486935852954,
     "perspective": true,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 21.947468753434226
     }
   },
   "embedding": [
@@ -4265,7 +4265,7 @@
       "title": "Faces",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 10.973734376717113,
         "stereo": false,
         "lookDirection": {
           "x": 0,
@@ -4282,15 +4282,15 @@
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "nearClipDistance": 0.025,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
+        "viewDistance": 21.947468753434226,
+        "nearClipDistance": 2.1947468753434225,
+        "farClipDistance": 43.89493750686845,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 21.947468753434226
         }
       },
       "snapshot": 0
@@ -4299,7 +4299,7 @@
       "title": "Edges",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 10.973734376717113,
         "stereo": false,
         "lookDirection": {
           "x": 0,
@@ -4316,15 +4316,15 @@
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "nearClipDistance": 0.025,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
+        "viewDistance": 21.947468753434226,
+        "nearClipDistance": 2.1947468753434225,
+        "farClipDistance": 43.89493750686845,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 21.947468753434226
         }
       },
       "snapshot": 1

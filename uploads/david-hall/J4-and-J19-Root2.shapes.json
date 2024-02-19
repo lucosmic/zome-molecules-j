@@ -466,11 +466,11 @@
     ]
   },
   "camera": {
-    "width": 4.5,
+    "width": 11.191729855468774,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 22.383459710937547
     },
     "lookDirection": {
       "x": 0,
@@ -488,11 +488,11 @@
       "z": 0
     },
     "stereo": false,
-    "nearClipDistance": 0.025,
+    "nearClipDistance": 2.238345971093755,
     "perspective": true,
-    "viewDistance": 10,
-    "farClipDistance": 20,
-    "fieldOfView": 4.4
+    "viewDistance": 22.383459710937547,
+    "farClipDistance": 44.766919421875095,
+    "fieldOfView": 28.072486935852954
   },
   "embedding": [
     1,
@@ -3654,11 +3654,11 @@
       "title": "J19 Faces",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 11.191729855468774,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 22.383459710937547
         },
         "lookDirection": {
           "x": 0,
@@ -3676,11 +3676,11 @@
           "z": 0
         },
         "stereo": false,
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.238345971093755,
         "perspective": true,
-        "viewDistance": 10,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4
+        "viewDistance": 22.383459710937547,
+        "farClipDistance": 44.766919421875095,
+        "fieldOfView": 28.072486935852954
       },
       "snapshot": 0
     },
@@ -3688,11 +3688,11 @@
       "title": "J19 Edges",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 11.191729855468774,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 22.383459710937547
         },
         "lookDirection": {
           "x": 0,
@@ -3710,11 +3710,11 @@
           "z": 0
         },
         "stereo": false,
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.238345971093755,
         "perspective": true,
-        "viewDistance": 10,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4
+        "viewDistance": 22.383459710937547,
+        "farClipDistance": 44.766919421875095,
+        "fieldOfView": 28.072486935852954
       },
       "snapshot": 1
     },
@@ -3722,11 +3722,11 @@
       "title": "J4 Faces",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 11.191729855468774,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 22.383459710937547
         },
         "lookDirection": {
           "x": 0,
@@ -3744,11 +3744,11 @@
           "z": 0
         },
         "stereo": false,
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.238345971093755,
         "perspective": true,
-        "viewDistance": 10,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4
+        "viewDistance": 22.383459710937547,
+        "farClipDistance": 44.766919421875095,
+        "fieldOfView": 28.072486935852954
       },
       "snapshot": 2
     },
@@ -3756,11 +3756,11 @@
       "title": "J4 Edges",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 11.191729855468774,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 22.383459710937547
         },
         "lookDirection": {
           "x": 0,
@@ -3778,11 +3778,11 @@
           "z": 0
         },
         "stereo": false,
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.238345971093755,
         "perspective": true,
-        "viewDistance": 10,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4
+        "viewDistance": 22.383459710937547,
+        "farClipDistance": 44.766919421875095,
+        "fieldOfView": 28.072486935852954
       },
       "snapshot": 3
     }

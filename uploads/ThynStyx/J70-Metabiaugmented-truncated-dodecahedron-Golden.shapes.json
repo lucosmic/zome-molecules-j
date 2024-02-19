@@ -1117,14 +1117,14 @@
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 50.13295176182434
     },
-    "width": 4.5,
-    "nearClipDistance": 0.025,
+    "width": 25.06647588091217,
+    "nearClipDistance": 5.013295176182434,
     "perspective": true,
-    "farClipDistance": 20,
-    "viewDistance": 10,
-    "fieldOfView": 4.4,
+    "farClipDistance": 100.26590352364867,
+    "viewDistance": 50.13295176182434,
+    "fieldOfView": 28.072486935852954,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
@@ -26100,14 +26100,14 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 50.13295176182434
         },
-        "width": 4.5,
-        "nearClipDistance": 0.025,
+        "width": 25.06647588091217,
+        "nearClipDistance": 5.013295176182434,
         "perspective": true,
-        "farClipDistance": 20,
-        "viewDistance": 10,
-        "fieldOfView": 4.4,
+        "farClipDistance": 100.26590352364867,
+        "viewDistance": 50.13295176182434,
+        "fieldOfView": 28.072486935852954,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
@@ -26134,14 +26134,14 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 50.13295176182434
         },
-        "width": 4.5,
-        "nearClipDistance": 0.025,
+        "width": 25.06647588091217,
+        "nearClipDistance": 5.013295176182434,
         "perspective": true,
-        "farClipDistance": 20,
-        "viewDistance": 10,
-        "fieldOfView": 4.4,
+        "farClipDistance": 100.26590352364867,
+        "viewDistance": 50.13295176182434,
+        "fieldOfView": 28.072486935852954,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
@@ -29220,7 +29220,7 @@
       },
       {
         "shape": "c9af9550-43fe-4733-8ddf-c5f833e5244a",
-        "color": "#6C00FF",
+        "color": "#6C00C6",
         "position": {
           "x": 0,
           "y": 0,

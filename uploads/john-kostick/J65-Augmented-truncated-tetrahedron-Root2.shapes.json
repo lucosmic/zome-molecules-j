@@ -481,17 +481,17 @@
       "y": 0,
       "z": 0
     },
-    "fieldOfView": 4.4,
+    "fieldOfView": 28.072486935852954,
     "perspective": true,
-    "nearClipDistance": 0.025,
-    "viewDistance": 10,
-    "farClipDistance": 20,
+    "nearClipDistance": 2.4657656156479275,
+    "viewDistance": 24.657656156479273,
+    "farClipDistance": 49.31531231295855,
     "stereo": false,
-    "width": 4.5,
+    "width": 12.328828078239637,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 24.657656156479273
     }
   },
   "embedding": [
@@ -2197,17 +2197,17 @@
           "y": 0,
           "z": 0
         },
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
-        "nearClipDistance": 0.025,
-        "viewDistance": 10,
-        "farClipDistance": 20,
+        "nearClipDistance": 2.4657656156479275,
+        "viewDistance": 24.657656156479273,
+        "farClipDistance": 49.31531231295855,
         "stereo": false,
-        "width": 4.5,
+        "width": 12.328828078239637,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 24.657656156479273
         }
       },
       "snapshot": 0
@@ -2231,17 +2231,17 @@
           "y": 0,
           "z": 0
         },
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
-        "nearClipDistance": 0.025,
-        "viewDistance": 10,
-        "farClipDistance": 20,
+        "nearClipDistance": 2.4657656156479275,
+        "viewDistance": 24.657656156479273,
+        "farClipDistance": 49.31531231295855,
         "stereo": false,
-        "width": 4.5,
+        "width": 12.328828078239637,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 24.657656156479273
         }
       },
       "snapshot": 1
@@ -2693,7 +2693,7 @@
       },
       {
         "shape": "8377f7cd-984f-44c6-8c06-67a8891d9203",
-        "color": "#008D2D",
+        "color": "#008D36",
         "position": {
           "x": 0,
           "y": 0,
@@ -2703,7 +2703,7 @@
       },
       {
         "shape": "708d3dfa-5729-41e7-bdee-4ee6cd856bcf",
-        "color": "#008D2D",
+        "color": "#008D36",
         "position": {
           "x": 0,
           "y": 0,
@@ -2723,7 +2723,7 @@
       },
       {
         "shape": "1f49752b-3f3c-44dc-8cca-59e05e89a5c3",
-        "color": "#008D2D",
+        "color": "#008D36",
         "position": {
           "x": 0,
           "y": 0,

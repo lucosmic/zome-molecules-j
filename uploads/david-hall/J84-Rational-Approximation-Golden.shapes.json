@@ -1117,9 +1117,9 @@
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 14.876959775104318
     },
-    "width": 4.5,
+    "width": 7.438479887552159,
     "lookDirection": {
       "x": 0,
       "y": 0,
@@ -1136,11 +1136,11 @@
       "z": 0
     },
     "stereo": false,
-    "nearClipDistance": 0.025,
-    "viewDistance": 10,
-    "fieldOfView": 4.4,
+    "nearClipDistance": 1.487695977510432,
+    "viewDistance": 14.876959775104318,
+    "fieldOfView": 28.072486935852954,
     "perspective": true,
-    "farClipDistance": 20
+    "farClipDistance": 29.753919550208636
   },
   "embedding": [
     1,
@@ -3594,9 +3594,9 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 14.876959775104318
         },
-        "width": 4.5,
+        "width": 7.438479887552159,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -3613,11 +3613,11 @@
           "z": 0
         },
         "stereo": false,
-        "nearClipDistance": 0.025,
-        "viewDistance": 10,
-        "fieldOfView": 4.4,
+        "nearClipDistance": 1.487695977510432,
+        "viewDistance": 14.876959775104318,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
-        "farClipDistance": 20
+        "farClipDistance": 29.753919550208636
       },
       "snapshot": 0
     },
@@ -3628,9 +3628,9 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 14.876959775104318
         },
-        "width": 4.5,
+        "width": 7.438479887552159,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -3647,11 +3647,11 @@
           "z": 0
         },
         "stereo": false,
-        "nearClipDistance": 0.025,
-        "viewDistance": 10,
-        "fieldOfView": 4.4,
+        "nearClipDistance": 1.487695977510432,
+        "viewDistance": 14.876959775104318,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
-        "farClipDistance": 20
+        "farClipDistance": 29.753919550208636
       },
       "snapshot": 1
     }

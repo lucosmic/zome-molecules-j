@@ -466,17 +466,17 @@
     ]
   },
   "camera": {
-    "width": 4.5,
+    "width": 8.000000207193063,
     "stereo": false,
-    "viewDistance": 10,
-    "nearClipDistance": 0.025,
-    "farClipDistance": 20,
+    "viewDistance": 16.000000414386125,
+    "nearClipDistance": 1.6000000414386126,
+    "farClipDistance": 32.00000082877225,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "fieldOfView": 4.4,
+    "fieldOfView": 28.072486935852954,
     "perspective": true,
     "lookDirection": {
       "x": 0,
@@ -491,7 +491,7 @@
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 16.000000414386125
     }
   },
   "embedding": [
@@ -2011,17 +2011,17 @@
       "title": "Edges",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 8.000000207193063,
         "stereo": false,
-        "viewDistance": 10,
-        "nearClipDistance": 0.025,
-        "farClipDistance": 20,
+        "viewDistance": 16.000000414386125,
+        "nearClipDistance": 1.6000000414386126,
+        "farClipDistance": 32.00000082877225,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "lookDirection": {
           "x": 0,
@@ -2036,7 +2036,7 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 16.000000414386125
         }
       },
       "snapshot": 0
@@ -2045,17 +2045,17 @@
       "title": "Faces",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 8.000000207193063,
         "stereo": false,
-        "viewDistance": 10,
-        "nearClipDistance": 0.025,
-        "farClipDistance": 20,
+        "viewDistance": 16.000000414386125,
+        "nearClipDistance": 1.6000000414386126,
+        "farClipDistance": 32.00000082877225,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "lookDirection": {
           "x": 0,
@@ -2070,7 +2070,7 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 16.000000414386125
         }
       },
       "snapshot": 1

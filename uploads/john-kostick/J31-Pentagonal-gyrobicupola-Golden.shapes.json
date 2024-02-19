@@ -1114,16 +1114,16 @@
     ]
   },
   "camera": {
-    "fieldOfView": 4.4,
+    "fieldOfView": 28.072486935852954,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "viewDistance": 10,
-    "nearClipDistance": 0.025,
+    "viewDistance": 25.911472628441683,
+    "nearClipDistance": 2.5911472628441685,
     "perspective": true,
-    "farClipDistance": 20,
+    "farClipDistance": 51.822945256883365,
     "lookDirection": {
       "x": 0,
       "y": 0,
@@ -1135,11 +1135,11 @@
       "z": 0
     },
     "stereo": false,
-    "width": 4.5,
+    "width": 12.955736314220841,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 25.911472628441683
     }
   },
   "embedding": [
@@ -18853,16 +18853,16 @@
       "title": "Faces",
       "content": "",
       "view": {
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "nearClipDistance": 0.025,
+        "viewDistance": 25.911472628441683,
+        "nearClipDistance": 2.5911472628441685,
         "perspective": true,
-        "farClipDistance": 20,
+        "farClipDistance": 51.822945256883365,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -18874,11 +18874,11 @@
           "z": 0
         },
         "stereo": false,
-        "width": 4.5,
+        "width": 12.955736314220841,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 25.911472628441683
         }
       },
       "snapshot": 5
@@ -18887,16 +18887,16 @@
       "title": "Edges",
       "content": "",
       "view": {
-        "fieldOfView": 4.4,
+        "fieldOfView": 28.072486935852954,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "nearClipDistance": 0.025,
+        "viewDistance": 25.911472628441683,
+        "nearClipDistance": 2.5911472628441685,
         "perspective": true,
-        "farClipDistance": 20,
+        "farClipDistance": 51.822945256883365,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -18908,11 +18908,11 @@
           "z": 0
         },
         "stereo": false,
-        "width": 4.5,
+        "width": 12.955736314220841,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 25.911472628441683
         }
       },
       "snapshot": 6

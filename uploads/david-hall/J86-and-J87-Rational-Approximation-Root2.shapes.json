@@ -469,18 +469,18 @@
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 18.795268932020846
     },
-    "nearClipDistance": 0.025,
-    "width": 4.5,
-    "farClipDistance": 20,
+    "nearClipDistance": 1.8795268932020848,
+    "width": 9.397634466010423,
+    "farClipDistance": 37.59053786404169,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "viewDistance": 10,
-    "fieldOfView": 4.4,
+    "viewDistance": 18.795268932020846,
+    "fieldOfView": 28.072486935852954,
     "perspective": true,
     "lookDirection": {
       "x": 0,
@@ -3414,18 +3414,18 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 18.795268932020846
         },
-        "nearClipDistance": 0.025,
-        "width": 4.5,
-        "farClipDistance": 20,
+        "nearClipDistance": 1.8795268932020848,
+        "width": 9.397634466010423,
+        "farClipDistance": 37.59053786404169,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "fieldOfView": 4.4,
+        "viewDistance": 18.795268932020846,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "lookDirection": {
           "x": 0,
@@ -3448,18 +3448,18 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 18.795268932020846
         },
-        "nearClipDistance": 0.025,
-        "width": 4.5,
-        "farClipDistance": 20,
+        "nearClipDistance": 1.8795268932020848,
+        "width": 9.397634466010423,
+        "farClipDistance": 37.59053786404169,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "fieldOfView": 4.4,
+        "viewDistance": 18.795268932020846,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "lookDirection": {
           "x": 0,
@@ -3482,18 +3482,18 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 18.795268932020846
         },
-        "nearClipDistance": 0.025,
-        "width": 4.5,
-        "farClipDistance": 20,
+        "nearClipDistance": 1.8795268932020848,
+        "width": 9.397634466010423,
+        "farClipDistance": 37.59053786404169,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "fieldOfView": 4.4,
+        "viewDistance": 18.795268932020846,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "lookDirection": {
           "x": 0,
@@ -3516,18 +3516,18 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 18.795268932020846
         },
-        "nearClipDistance": 0.025,
-        "width": 4.5,
-        "farClipDistance": 20,
+        "nearClipDistance": 1.8795268932020848,
+        "width": 9.397634466010423,
+        "farClipDistance": 37.59053786404169,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "fieldOfView": 4.4,
+        "viewDistance": 18.795268932020846,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "lookDirection": {
           "x": 0,

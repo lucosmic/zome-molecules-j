@@ -471,9 +471,9 @@
       "y": 0,
       "z": 0
     },
-    "viewDistance": 10,
-    "fieldOfView": 4.4,
-    "farClipDistance": 20,
+    "viewDistance": 25.170114612501745,
+    "fieldOfView": 28.072486935852954,
+    "farClipDistance": 50.34022922500349,
     "perspective": true,
     "lookDirection": {
       "x": 0,
@@ -486,13 +486,13 @@
       "z": 0
     },
     "stereo": false,
-    "width": 4.5,
+    "width": 12.585057306250873,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 25.170114612501745
     },
-    "nearClipDistance": 0.025
+    "nearClipDistance": 2.5170114612501746
   },
   "embedding": [
     1,
@@ -6161,9 +6161,9 @@
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "fieldOfView": 4.4,
-        "farClipDistance": 20,
+        "viewDistance": 25.170114612501745,
+        "fieldOfView": 28.072486935852954,
+        "farClipDistance": 50.34022922500349,
         "perspective": true,
         "lookDirection": {
           "x": 0,
@@ -6176,13 +6176,13 @@
           "z": 0
         },
         "stereo": false,
-        "width": 4.5,
+        "width": 12.585057306250873,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 25.170114612501745
         },
-        "nearClipDistance": 0.025
+        "nearClipDistance": 2.5170114612501746
       },
       "snapshot": 11
     },
@@ -6195,9 +6195,9 @@
           "y": 0,
           "z": 0
         },
-        "viewDistance": 10,
-        "fieldOfView": 4.4,
-        "farClipDistance": 20,
+        "viewDistance": 25.170114612501745,
+        "fieldOfView": 28.072486935852954,
+        "farClipDistance": 50.34022922500349,
         "perspective": true,
         "lookDirection": {
           "x": 0,
@@ -6210,13 +6210,13 @@
           "z": 0
         },
         "stereo": false,
-        "width": 4.5,
+        "width": 12.585057306250873,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 25.170114612501745
         },
-        "nearClipDistance": 0.025
+        "nearClipDistance": 2.5170114612501746
       },
       "snapshot": 12
     }

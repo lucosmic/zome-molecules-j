@@ -471,21 +471,21 @@
       "y": 1,
       "z": 0
     },
-    "width": 4.5,
+    "width": 9.818570783842526,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 19.637141567685052
     },
-    "nearClipDistance": 0.025,
+    "nearClipDistance": 1.9637141567685052,
     "lookDirection": {
       "x": 0,
       "y": 0,
       "z": -1
     },
-    "viewDistance": 10,
-    "farClipDistance": 20,
-    "fieldOfView": 4.4,
+    "viewDistance": 19.637141567685052,
+    "farClipDistance": 39.274283135370105,
+    "fieldOfView": 28.072486935852954,
     "perspective": true,
     "lookAtPoint": {
       "x": 0,
@@ -3374,21 +3374,21 @@
           "y": 1,
           "z": 0
         },
-        "width": 4.5,
+        "width": 9.818570783842526,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 19.637141567685052
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 1.9637141567685052,
         "lookDirection": {
           "x": 0,
           "y": 0,
           "z": -1
         },
-        "viewDistance": 10,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
+        "viewDistance": 19.637141567685052,
+        "farClipDistance": 39.274283135370105,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "lookAtPoint": {
           "x": 0,
@@ -3408,21 +3408,21 @@
           "y": 1,
           "z": 0
         },
-        "width": 4.5,
+        "width": 9.818570783842526,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 19.637141567685052
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 1.9637141567685052,
         "lookDirection": {
           "x": 0,
           "y": 0,
           "z": -1
         },
-        "viewDistance": 10,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
+        "viewDistance": 19.637141567685052,
+        "farClipDistance": 39.274283135370105,
+        "fieldOfView": 28.072486935852954,
         "perspective": true,
         "lookAtPoint": {
           "x": 0,

@@ -1114,22 +1114,22 @@
     "backgroundColor": "#AFC8DC"
   },
   "camera": {
-    "width": 4.5,
+    "width": 13.548216814608011,
     "position": {
       "x": 0,
       "y": 0,
-      "z": 10
+      "z": 27.096433629216023
     },
     "perspective": true,
-    "farClipDistance": 20,
-    "fieldOfView": 4.4,
-    "viewDistance": 10,
+    "farClipDistance": 54.192867258432045,
+    "fieldOfView": 28.072486935852954,
+    "viewDistance": 27.096433629216023,
     "lookAtPoint": {
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "nearClipDistance": 0.025,
+    "nearClipDistance": 2.7096433629216023,
     "lookDirection": {
       "x": 0,
       "y": 0,
@@ -11402,22 +11402,22 @@
       "title": "Step 1",
       "content": "In octahedral symmetry, drag a unit length blue strut to the Z axis, make a ball at the midpoint then delete the strut and both endpoints, leaving just a ball at (0,0,1/2). Call that ball A.",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11436,22 +11436,22 @@
       "title": "Step 2",
       "content": "From ball A, drag a strut of custom length phi in the +X direction. Call the new ball B.",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11470,22 +11470,22 @@
       "title": "Step 3",
       "content": "From ball A, drag a strut of custom length 1/(-a+c) in the +Z direction. Call the new ball C.",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11504,22 +11504,22 @@
       "title": "Step 4",
       "content": "From ball A, drag a strut of custom length 1/(a+2c+e-2g) in the +Y direction. Call the new ball D.",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11538,22 +11538,22 @@
       "title": "Step 5",
       "content": "Switch to antiprism symmetry then select balls B and D.",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11572,22 +11572,22 @@
       "title": "Step 6",
       "content": "Apply the built-in \"symmetry around red through origin\" tool, deselect all, then select every 3rd ball on the outer ring, starting at ball B and every 6th ball around the inner ring starting at ball D.",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11606,22 +11606,22 @@
       "title": "Step 7",
       "content": "Invert the selection, then delete, leaving 15 balls.\nAt this point, select all and save the file as the common starting point for J38 and J39.",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11640,22 +11640,22 @@
       "title": "Step 8 for J38",
       "content": "Either  use \"Point Reflection\" from the \"Tools\" menu to make the vertices of J38...",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11674,22 +11674,22 @@
       "title": "Step 8 for J39",
       "content": "... or else use the built-in \"reflection through XY plane\" tool, then \"Select All\" to make the vertices of J39.",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11708,22 +11708,22 @@
       "title": "Step 9 for J38",
       "content": "In either case, use a 3D convex hull to generate the balls, struts and panels.",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11742,22 +11742,22 @@
       "title": "Step 9 for J39",
       "content": "In either case, use a 3D convex hull to generate the balls, struts and panels.",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11776,22 +11776,22 @@
       "title": "J38 Edges",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11810,22 +11810,22 @@
       "title": "J38 Faces",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11844,22 +11844,22 @@
       "title": "J39 Faces",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
@@ -11878,22 +11878,22 @@
       "title": "J39 Edges",
       "content": "",
       "view": {
-        "width": 4.5,
+        "width": 13.548216814608011,
         "position": {
           "x": 0,
           "y": 0,
-          "z": 10
+          "z": 27.096433629216023
         },
         "perspective": true,
-        "farClipDistance": 20,
-        "fieldOfView": 4.4,
-        "viewDistance": 10,
+        "farClipDistance": 54.192867258432045,
+        "fieldOfView": 28.072486935852954,
+        "viewDistance": 27.096433629216023,
         "lookAtPoint": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "nearClipDistance": 0.025,
+        "nearClipDistance": 2.7096433629216023,
         "lookDirection": {
           "x": 0,
           "y": 0,
