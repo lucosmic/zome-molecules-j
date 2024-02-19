@@ -22,6 +22,8 @@ if(new URL(document.location).searchParams.get("download") == "true") {
 	document.getElementById( "index" ).addEventListener( "click", downloadShapesJson );
 }
 
+// https://medium.com/charisol-community/downloading-resources-in-html5-a-download-may-not-work-as-expected-bf63546e2baa
+// This method works with local files as well as cross origin files.
 function downloadShapesJson() {
 	const url = viewer.src.replace( ".vZome", ".shapes.json" );
 	const filename = url.substring(url.lastIndexOf( "/" ) + 1);
@@ -37,7 +39,7 @@ function downloadShapesJson() {
 		return response.json(); 
 	} )
 	.then(modelData => {
-		const stringifiedData = JSON.stringify(postProceess(modelData), null, 2);
+		const stringifiedData = JSON.stringify(postProcess(modelData), null, 2);
 		const blobUrl = URL.createObjectURL(new Blob([stringifiedData], { type: "application/json" }));
 		downloadLink.href = blobUrl;
 		downloadLink.click();
@@ -50,32 +52,71 @@ function downloadShapesJson() {
 	});
 }
 
-function postProceess(modelData) {
-	//recolor(modelData); // Shouldn't be needed any more
+function postProcess(modelData) {
+	recolor(modelData);
 	rescale(modelData);
 	standardizeCameras(modelData);
 	return modelData;
 }
 
 function standardizeCameras(modelData) {
-	// Adjust all camera settings to the same values
-	// so that any model that's the first one loaded will have the same the initial camera.
+	// Adjust all camera vector settings to the same values
+	// and zoom levels so that any model that's the first one loaded will be zoomed to fit
+	// and others wil use the same initial zoom level.
 	// Any model could be the one that sets the default camera if the "J=" queryparam is used.
-	standardizeCamera(modelData.camera);
+	const distance = getDistanceScaledToFitView(modelData);
+	standardizeCamera(modelData.camera, distance);
 	for(let scene of modelData.scenes) {
-		// scene views are not used by the Johnson solids app, but we'll standardize them anyway since we're here
-		standardizeCamera(scene.view);
+		// scene views are not used by the Johnson solids app, but we'll standardize their cameras too since we're here
+		standardizeCamera(scene.view, distance);
 	}
 	return modelData;
 }
 
-function standardizeCamera(camera) {
-	const viewDistance = 10;
-    camera.viewDistance = 10;
-    camera.farClipDistance = viewDistance * 2;
-	camera.nearClipDistance = viewDistance * .0025;
-    camera.fieldOfView = viewDistance * .44;
-    camera.width = viewDistance * .45;
+function cameraFieldOfViewY ( width, distance ) {
+  const halfX = width / 2;
+  const halfY = halfX; // assumes aspectWtoH = 1.0;
+  return 360 * Math.atan( halfY / distance ) / Math.PI;
+}
+
+function getDistanceScaledToFitView(modelData) {
+	const snapshots = getFaceSceneSnapshots(modelData);
+	const shapeMap = new Map();
+	for(const shape of modelData.shapes) {
+		shapeMap.set(shape.id, shape);
+	}
+	const origin = {x:0, y:0, z:0};
+	var maxRadius = 0;
+	for(const snapshot of snapshots) {
+		const ss = modelData.snapshots[snapshot];
+		for(let i = 0; i < ss.length; i++) {
+			const item = ss[i];
+			const shapeGuid = item.shape;
+			const vertices = shapeMap.get(shapeGuid).vertices;
+			for(const vertex of vertices) {
+				maxRadius = Math.max( maxRadius, edgeLength(origin, vertex) );
+			}
+		}
+	}
+	// Originally, I planned to determine the distance based on the view frustum 
+	// and a sphere with radius = maxRadius, but I determined that a simple scaling
+	// of maxRadius is adequate and much simpler.
+	// Emperically, distance ends up being 
+	// about 12 for J1 which is the smallest solid
+	//   and 48 for J71 which is the biggest solid.
+	return maxRadius * 8; // Scale factor of 8 was determined empirically as a reasonable best-fit.
+}
+
+function standardizeCamera(camera, distance) {
+	// Much of this is copied from camera.jsx
+	const NEAR_FACTOR = 0.1;
+	const FAR_FACTOR = 2.0;
+	const WIDTH_FACTOR = 0.5;
+    camera.viewDistance = distance;
+    camera.farClipDistance = distance * FAR_FACTOR;
+	camera.nearClipDistance = distance * NEAR_FACTOR;
+    camera.width = distance * WIDTH_FACTOR;
+    camera.fieldOfView = cameraFieldOfViewY ( camera.width, camera.viewDistance );
 
 	camera.perspective = true;
 	camera.stereo = false;
@@ -100,24 +141,7 @@ function standardizeCamera(camera) {
 }
 
 function rescale(modelData) {
-	// Get a list of facescene(s) of all models that use the selected jsolid's URL.
-	// There may be only one facescene, but there may be more than one. e.g. J38 & J39
-	const url = viewer.src;
-	const facescenes = [];
-	for(const model of models) {
-		if(model.url == url) {
-			facescenes.push(model.facescene);
-		}
-	}
-	const snapshots = [];
-	// if(facescenes.includes("default scene")) {
-	// 	snapshots.push(0);
-	// }
-	for(const scene of modelData.scenes) {
-		if(facescenes.includes(scene.title)) {
-			snapshots.push(scene.snapshot);
-		}
-	}
+	const snapshots = getFaceSceneSnapshots(modelData);
 	const shapeMap = new Map();
 	for(const shape of modelData.shapes) {
 		shapeMap.set(shape.id, shape);
@@ -201,8 +225,28 @@ function scaleVector(scalar, vector) {
 	// don't need to return the vector because it's passed by reference and updated in situ
 }
 
-/*
 function recolor(modelData) {
+	const snapshots = getFaceSceneSnapshots(modelData);
+	const shapeMap = new Map();
+	for(const shape of modelData.shapes) {
+		shapeMap.set(shape.id, shape.vertices.length);
+	}
+	for(const snapshot of snapshots) {
+		const ss = modelData.snapshots[snapshot];
+		for(let i = 0; i < ss.length; i++) {
+			const item = ss[i];
+			const shapeGuid = item.shape;
+			const nVertices = shapeMap.get(shapeGuid);
+			const newColor = shapeColors.get(nVertices);
+			if(newColor) {
+				modelData.snapshots[snapshot][i].color = newColor;
+			}
+		}
+	}
+	return modelData;
+}
+
+function getFaceSceneSnapshots(modelData) {
 	// Get a list of facescene(s) of all models that use the selected jsolid's URL.
 	// There may be only one facescene, but there may be more than one. e.g. J38 & J39
 	const url = viewer.src;
@@ -221,26 +265,9 @@ function recolor(modelData) {
 			snapshots.push(scene.snapshot);
 		}
 	}
-	const shapeMap = new Map();
-	for(const shape of modelData.shapes) {
-		shapeMap.set(shape.id, shape.vertices.length);
-	}
-	console.dir(snapshots);
-	for(const snapshot of snapshots) {
-		const ss = modelData.snapshots[snapshot];
-		for(let i = 0; i < ss.length; i++) {
-			const item = ss[i];
-			const shapeGuid = item.shape;
-			const nVertices = shapeMap.get(shapeGuid);
-			const newColor = shapeColors.get(nVertices);
-			if(newColor) {
-				modelData.snapshots[snapshot][i].color = newColor;
-			}
-		}
-	}
-	return modelData;
+	// console.dir(snapshots);
+	return snapshots;
 }
-*/
 
 viewer .addEventListener( "vzome-scenes-discovered", (e) => {
   // Just logging this to the console for now. Not actually using the scenes list.
@@ -283,15 +310,6 @@ function selectJohnsonSolid( jsolid, tr ) {
 		  selectedRow = tr;
 		  selectedRow.className = "selected";
 		  document.getElementById( "index" ).textContent = "J" +id;
-		  //const shapes = url.replace( ".vZome", ".shapes.json" );
-		  //downloadLink.href = shapes;
-		  //const filename = shapes.substring(shapes.lastIndexOf('/')+1);
-		  //downloadLink.download = filename;
-		  /* 
-		  Downloads local files as expected, but it won't directly download cross origin files in-situ.
-		  One possible react solution is https://medium.com/charisol-community/downloading-resources-in-html5-a-download-may-not-work-as-expected-bf63546e2baa
-		  The local downloadShapesJson() method works with local files as well as cross origin files.
-		  */
 		  switchModel(jsolid);
 	  } else {
 		  alert("Johnson solid J" + id + " is not yet available.\n\nPlease help us collect the full set.");
