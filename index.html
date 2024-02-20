@@ -38,16 +38,18 @@
   <div class="main-grid">
     <div class="intro">
       <h1>
-        Johnson Solids made with <a href="https://vzome.com" target="_blank" rel="noopener">vZome</a>
-      </h1>    
-      <p>
-        Select a row in the table to view that Johnson solid.<br>
-        Check the box in the viewer to show struts and balls for 
-        <a href="https://www.zometool.com" target="_blank" rel="noopener">Zometool</a> constructible solids listed in italics.
-      </p>
-      <p>
-        Use your mouse to manipulate the 3D view: left button to rotate, right button to pan, and scroll gesture to zoom.
-      </p>
+        Johnson Solids Explorer
+      </h1>
+      <div class="intro-text">
+        <p>
+          Select a row in the table to view that Johnson solid.<br> 
+          For <a href="https://www.zometool.com" target="_blank" rel="noopener">Zometool</a>-constructible solids highlighted in blue,
+          check the box in the viewer to show struts and balls.
+        </p>
+        <p>
+          Use your mouse to manipulate the 3D view: left button to rotate, right button to pan, and scroll gesture to zoom.
+        </p>
+      </div>
     </div>
 
     <div class="table">
@@ -66,26 +68,28 @@
           <div id="index"></div>
       </h1>
       <div id="zome-switch">
+        <label id="labelForShowEdges"" for="showEdges">Show Zometool</label>
         <input type="checkbox" id="showEdges">
-        <div>Show Zometool</div>
       </div>
       <vzome-viewer id="viewer" reactive="false"/>
     </div>
-  </div>
 
-  <div class="references">
-    <h2>
-	  References
-	</h2> 
-	<p>
+    <div class="references">
+      <h2>
+        References
+      </h2>
+
       <ul>
-	    <li><a href="https://discord.com/channels/808488427400986724/1176604061294936114" target="_blank" rel="noopener">Discord</a></li>
-	    <li><a href="https://github.com/vZome/johnson-solids/" target="_blank" rel="noopener">GitHub</a></li>
-	    <li><a href="https://www.qfbox.info/4d/johnson" target="_blank" rel="noopener">QFBox</a></li>
-	    <li><a href="https://en.wikipedia.org/wiki/Johnson_solid" target="_blank" rel="noopener">Wikipedia</a></li>
-	    <li><a href="https://en.wikipedia.org/wiki/List_of_Johnson_solids" target="_blank" rel="noopener">Wikipedia (list)</a></li>
+        <li><a href="https://discord.com/channels/808488427400986724/1176604061294936114" target="_blank"
+            rel="noopener">Discord discussion</a></li>
+        <li><a href="https://github.com/vZome/johnson-solids/" target="_blank" rel="noopener">GitHub source</a></li>
+        <li><a href="https://vzome.com" target="_blank" rel="noopener">vZome</a></li>
+        <li><a href="https://www.qfbox.info/4d/johnson" target="_blank" rel="noopener">More Polyhedra</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Johnson_solid" target="_blank" rel="noopener">Wikipedia</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/List_of_Johnson_solids" target="_blank" rel="noopener">Wikipedia
+            (list)</a></li>
       </ul>
-	</p>  
+    </div>
   </div>
 
   <div class="download">
