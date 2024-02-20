@@ -62,7 +62,7 @@ function postProcess(modelData) {
 function standardizeCameras(modelData) {
 	// Adjust all camera vector settings to the same values
 	// and zoom levels so that any model that's the first one loaded will be zoomed to fit
-	// and others wil use the same initial zoom level.
+	// and others will use the same initial zoom level.
 	// Any model could be the one that sets the default camera if the "J=" queryparam is used.
 	const distance = getDistanceScaledToFitView(modelData);
 	standardizeCamera(modelData.camera, distance);
@@ -275,6 +275,18 @@ viewer .addEventListener( "vzome-scenes-discovered", (e) => {
   //console.log( "These scenes were discovered in " + viewer.src);
   console.log( JSON.stringify( scenes, null, 2 ) );
 } );
+
+// TODO: Remove this listener after the race condition is fixed
+viewer .addEventListener( "vzome-scenes-discovered", (e) => {
+  console.log( "This event handler is only triggered the first time a vzome scene is discovered after the page is loaded.\n"
+	+ "It is a work around for the intermittant race condition that results in the wrong camera zoom level.\n"
+	+ "The same race condition may still result in showing the wrong background color, but at least the camera zoom is consistent.\n"
+	+ "If the vzome-viewer revision is shown ABOVE this message, then the background color was read from .shapes.json.\n"
+	+ "If the vzome-viewer revision is shown BELOW this message, then the default background color of the viewer is being used.\n"
+	);
+  viewer.update({ camera: true }); // force a camera update, but background color may still be wrong.
+},
+{once: true}); // automatically remove this listener after it is fired once
 
 for (const jsolid of models) {
   const tr = tbody.insertRow();
