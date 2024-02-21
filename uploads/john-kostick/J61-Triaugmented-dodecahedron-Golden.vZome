@@ -344,7 +344,7 @@
     <DeselectAll/>
   </EditHistory>
   <notes>
-    <page snapshot="6" title="">
+    <page snapshot="6" title="Edges">
       <ViewModel distance="100.37162017822266" far="200.7431182861328" near="0.250929057598114" parallel="false" stereoAngle="0.0" width="45.1672248840332">
         <LookAtPoint x="0.0" y="0.0" z="0.0"/>
         <UpDirection x="0.0" y="1.0" z="0.0"/>
