@@ -1,6 +1,7 @@
 import { models } from './johnson-solids-models.js';
 
 let selectedRow;
+const searchParams = new URL(document.location).searchParams;
 const table = document.getElementById( "partsTable" );
 const tbody = table.createTBody();
 const viewer = document.getElementById( "viewer" );
@@ -17,10 +18,14 @@ shapeColors.set( 6, "#008D36"); // green strut
 shapeColors.set( 8, "#DC4C00"); // orange strut
 shapeColors.set(10, "#6C00C6"); // purple strut
 
-// include a "download=true" query param in the URL to make the ID in the viewer become the .shapes.json download link
-if(new URL(document.location).searchParams.get("download") == "true") {
+// include a case sensitive "download=true" query param in the URL to make the ID in the viewer become the .shapes.json download link
+if(searchParams.get("download") == "true") {
 	document.getElementById( "index" ).addEventListener( "click", downloadShapesJson );
 }
+
+// include a case sensitive "showAnyEdges=true" query param in the URL to make the checkbox remain visible and functional
+const showAnyEdges = searchParams.get("showAnyEdges") == "true";
+document.getElementById( "labelForShowEdges" ).textContent = "Show " + (showAnyEdges ? "Edges" : "Zometool");
 
 // https://medium.com/charisol-community/downloading-resources-in-html5-a-download-may-not-work-as-expected-bf63546e2baa
 // This method works with local files as well as cross origin files.
@@ -295,7 +300,6 @@ for (const jsolid of models) {
 }
 
 var initialId = 1;
-const searchParams = new URL(document.location).searchParams;
 let jId = parseInt(searchParams.get("J")); // upper case
 if(Number.isNaN(jId)) {
 	jId = parseInt(searchParams.get("j")); // lower case
@@ -364,8 +368,8 @@ function setScene( jsolidSceneData ) {
   /// or it may be selectedRow.dataset.
   // Either one should have these properties, all in lower case
   const { field, edgescene, facescene, zometool } = jsolidSceneData;
-  const scene = field == "Golden" && zometool == "true" && showEdges.checked ? edgescene : facescene;
-  zomeSwitch.className = ( zometool == "true" ) ? 'zome' : 'no-zome';
+  const scene = (showAnyEdges || (field == "Golden" && zometool == "true")) && showEdges.checked ? edgescene : facescene;
+  zomeSwitch.className = (showAnyEdges || (zometool == "true")) ? 'zome' : 'no-zome';
   viewer.scene = scene;
   //console.log("Setting scene to '" + scene + "'");
   viewer.update({ camera: false });
