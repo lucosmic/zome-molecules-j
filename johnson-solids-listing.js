@@ -1,5 +1,6 @@
 import { models } from './johnson-solids-models.js';
 
+let camera = true;
 let selectedRow;
 const searchParams = new URL(document.location).searchParams;
 const table = document.getElementById( "partsTable" );
@@ -281,18 +282,6 @@ viewer .addEventListener( "vzome-scenes-discovered", (e) => {
   console.log( JSON.stringify( scenes, null, 2 ) );
 } );
 
-// TODO: Remove this listener after the race condition is fixed
-viewer .addEventListener( "vzome-scenes-discovered", (e) => {
-  console.log( "This event handler is only triggered the first time a vzome scene is discovered after the page is loaded.\n"
-	+ "It is a work around for the intermittant race condition that results in the wrong camera zoom level.\n"
-	+ "The same race condition may still result in showing the wrong background color, but at least the camera zoom is consistent.\n"
-	+ "If the vzome-viewer revision is shown ABOVE this message, then the background color was read from .shapes.json.\n"
-	+ "If the vzome-viewer revision is shown BELOW this message, then the default background color of the viewer is being used.\n"
-	);
-  viewer.update({ camera: true }); // force a camera update, but background color may still be wrong.
-},
-{once: true}); // automatically remove this listener after it is fired once
-
 for (const jsolid of models) {
   const tr = tbody.insertRow();
   fillRow(tr, jsolid);
@@ -363,6 +352,13 @@ function switchModel( jsolid ) {
   setScene( jsolid );
 }
 
+// After the first design is initially rendered, 
+// we don't want to update the camera position with each scene change
+viewer .addEventListener( "vzome-design-rendered", (e) => {
+	camera = false;
+},
+{once: true}); // automatically remove this listener after it is fired once
+
 function setScene( jsolidSceneData ) {
   // jsolidSceneData may be a jsolid object from the JSON
   /// or it may be selectedRow.dataset.
@@ -371,6 +367,5 @@ function setScene( jsolidSceneData ) {
   const scene = (showAnyEdges || (field == "Golden" && zometool == "true")) && showEdges.checked ? edgescene : facescene;
   zomeSwitch.className = (showAnyEdges || (zometool == "true")) ? 'zome' : 'no-zome';
   viewer.scene = scene;
-  //console.log("Setting scene to '" + scene + "'");
-  viewer.update({ camera: false });
+  viewer.update({ camera });
 }
