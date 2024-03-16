@@ -83,9 +83,9 @@ html, body {
   cursor: default; /* disable the "I-beam" text cursor */
   position: absolute;
   z-index: 300;
-  top: 3rem;
+  top: 1.5rem;
   right: 1.5rem;
-  font-size: 14px; /* Same as perspective switch */
+  font-size: 14px; /* Same as perspective switch, even though it's hidden */
 }
 
 input[type=checkbox]
