@@ -109,11 +109,11 @@ input[type=checkbox]
   display: none;
 }
 
-.no-zome {
+#zome-switch.no-rgrp {
   display: none;
 }
 
-.zome {
+#zome-switch.rgrp {
   display: flex;
 }
 
@@ -126,7 +126,7 @@ input[type=checkbox]
 /* spacing */
 
 table {
-  border-collapse: collapse;
+  border-spacing: 0;
   cursor: default; /* disable the "I-beam" text cursor */
   table-layout: fixed;
   width: 100%;
@@ -142,17 +142,29 @@ tbody td:nth-child(1)   /* id column */
   text-align: right;
 }
 
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: brown;
+}
+
 
 th,
 td {
   border: 1px solid gray;
   padding: 3px;
   white-space: nowrap;
+  
 }
 
 th.ident, td.done {
   background-color: var(--color-ident);
   font-weight: bold;
+}
+
+th.title, th.molec-form, th.category {
+  background-color: var(--color-todo);
 }
 
 th.ident, td.ident {
@@ -164,19 +176,19 @@ td.todo {
   font-style: italic;
 }
 
-td.title {
+td.title, td.molec-form {
   background-color: var(--color-yel-panel);
 }
-tr.selected > td:last-child.title {
+tr.selected > td {
   background-color: var(--color-yel-strut);
 }
 
-td.title.zometool {
+td.title.zometool, td.molec-form.zometool {
   background-color: var(--color-blu-panel);
   font-style: italic;
   font-weight: bold;
 }
-tr.selected > td:last-child.title.zometool {
+tr.selected > td.zometool {
   background-color: var(--color-blu-strut);
   font-style: italic;
   font-weight: bold;
