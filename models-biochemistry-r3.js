@@ -1,4 +1,4 @@
-export const models = [
+export const BIO_models = [
   //first 28 models can be the MolMania types. Perhaps. 
 
   //The name encodes the scene, then adding " R-Group" 
