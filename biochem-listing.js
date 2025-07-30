@@ -24,6 +24,8 @@ function fillRow(tr, model) {
   tr.dataset.scene = name;
   tr.dataset.rgroupscene = molec_type === 'AA-R' ? `${name} R-group` : "";
 
+  tr.classList.add("molec-" +  molec_type.substring(0,2).toLowerCase() );
+
   let td = tr.insertCell();
   td.className = "ident done";
   td.textContent = id;
