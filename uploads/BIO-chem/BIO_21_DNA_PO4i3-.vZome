@@ -106,7 +106,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Phosphate" snapshot="0">
+    <page title="Phosphate" snapshot="0">
       <ViewModel distance="33.38855812587117" far="66.77711625174234" near="0.030915331598028863" parallel="false" stereoAngle="0.0" width="15.024851156642027">
         <LookAtPoint x="0" y="0" z="0"/>
         <UpDirection x="0.5106366053006085" y="-0.8594113025576359" z="-0.02573849963106048"/>
