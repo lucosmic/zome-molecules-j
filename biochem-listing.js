@@ -86,10 +86,13 @@ showRgroup.addEventListener("change", () => {
 });
 
 viewer .addEventListener( "vzome-scenes-discovered", (e) => {
-  // Just logging this to the console for now. Not actually using the scenes list.
+  // Logging this to the console for now. Not actually using the scenes list.
   const scenes = e.detail;
   console.log( "These scenes were discovered in " + viewer.src);
   console.log( JSON.stringify( scenes, null, 2 ) );
+  //Now that scenes are discovered, update viewer. Again.
+  console.log("Update viewer after scene load...");
+  viewer.update();
 } );
 
 
@@ -103,6 +106,6 @@ function setScene(data) {
 	viewer.scene = scene;
 
 	
-
+	console.log("Update viewer...");
   	viewer.update();
 }
