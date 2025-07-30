@@ -2,8 +2,8 @@
 :root {
   --color-todo: rgb(255, 242, 242);
 
-  --color-ident: rgb(175, 200, 220); /* same as vZome default background */
-  --color-ident-selected: rgb(87, 100, 110); /* each RGB channel is 1/2 of unselected value */
+  --color-ident: rgb(243, 243, 243); /* same as vZome default background */
+  --color-ident-selected: rgb(109, 112, 114); /* each RGB channel is 1/2 of unselected value */
   
   --color-text: rgb(127, 127, 127);
   --color-text-selected: rgb(240, 240, 240);
@@ -183,11 +183,12 @@ th.ident, td.done {
   font-weight: bold;
 }
 
-th.title, th.molec-form, th.category {
+th:not(.ident) {
   background-color: var(--color-todo);
 }
 
-th.ident, td.ident {
+tr.ident td.ident {
+  background-color: var(--color-ident);
   /*width: 45ch; /* J77 and J78 have 45 characters in their names. No others are longer. */
 }
 
@@ -208,10 +209,10 @@ tr.selected > td {
   font-weight: bold;
 }
 
-tr.molec-aa > td {
+tr.molec-aa > td:not(.ident) {
   background-color: var(--color-teal-lite);
 }
-tr.molec-dn > td, tr.molec-rn >td {
+tr.molec-dn > td:not(.ident), tr.molec-rn > td:not(.ident) {
   background-color: var(--color-red-lite);
 }
 
@@ -221,7 +222,7 @@ tr.selected.molec-aa > td {
   font-style: italic;
   font-weight: bold;
 }
-tr.selected.molec-dn > td, tr.selected.molec-rn >td {
+tr.selected.molec-dn > td, tr.selected.molec-rn > td {
   background-color: var(--color-red-dark);
 }
 
