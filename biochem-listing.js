@@ -6,7 +6,7 @@ const tbody = table.createTBody();
 const viewer = document.getElementById("viewer");
 const showEdges = document.getElementById("showEdges");
 const zomeSwitch = document.getElementById( "zome-switch" );
-const indexPage = document.getElementById("index");
+const indexModel = document.getElementById("model-index");
 let selectedRow = null;
 
 for (const model of models) {
@@ -57,7 +57,7 @@ function selectModel(model, tr) {
   if (selectedRow) selectedRow.classList.remove("selected");
   selectedRow = tr;
   selectedRow.classList.add("selected");
-  indexPage.textContent = model.name;
+  indexModel.textContent = model.name;
   viewer.src = model.url;
   setScene(tr.dataset);
 }
