@@ -359,7 +359,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Carbon Dioxide" snapshot="9">
+    <page title="Carbon Dioxide" snapshot="9">
       <ViewModel distance="32.486840641448495" far="64.97368128289699" near="0.0300804080013412" parallel="false" stereoAngle="0.0" width="14.619078288651822">
         <LookAtPoint x="2.6180338859558105" y="2.6180338859558105" z="-2.6180338859558105"/>
         <UpDirection x="0.7071067690849304" y="-0.7071067690849304" z="0"/>

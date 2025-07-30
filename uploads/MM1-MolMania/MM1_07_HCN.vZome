@@ -176,7 +176,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Hydrogen Cyanide" snapshot="1">
+    <page title="Hydrogen Cyanide" snapshot="1">
       <ViewModel distance="35.41555605931981" far="70.83111211863962" near="0.032792181536407235" parallel="false" stereoAngle="0.0" width="15.937000226693916">
         <LookAtPoint x="2.6180338859558105" y="2.6180338859558105" z="2.6180338859558105"/>
         <UpDirection x="-0.4748837504428684" y="-0.6945961746935099" z="0.5403902087070673"/>

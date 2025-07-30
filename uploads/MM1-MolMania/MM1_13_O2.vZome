@@ -358,7 +358,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Oxygen Gas" snapshot="9">
+    <page title="Oxygen Gas" snapshot="9">
       <ViewModel distance="32.4868411974371" far="64.9736823948742" near="0.030080408516145466" parallel="false" stereoAngle="0.0" width="14.619078538846695">
         <LookAtPoint x="2.6180338859558105" y="2.6180338859558105" z="0"/>
         <UpDirection x="1" y="0" z="0"/>

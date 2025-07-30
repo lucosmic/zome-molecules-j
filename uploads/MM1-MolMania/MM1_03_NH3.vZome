@@ -153,7 +153,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Ammonia" snapshot="3">
+    <page title="Ammonia" snapshot="3">
       <ViewModel distance="28.028186547313382" far="56.056373094626764" near="0.025952024580845726" parallel="false" stereoAngle="0.0" width="12.612683946291023">
         <LookAtPoint x="2.385167673994194" y="3.720668202280528" z="3.091298099573477"/>
         <UpDirection x="0.31062655876102796" y="-0.8343500634976957" z="-0.455380184608062"/>

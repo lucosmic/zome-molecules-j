@@ -228,7 +228,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Nitrogen Gas" snapshot="2">
+    <page title="Nitrogen Gas" snapshot="2">
       <ViewModel distance="25.92752179176652" far="51.85504358353304" near="0.02400696462200604" parallel="false" stereoAngle="0.0" width="11.667384806294933">
         <LookAtPoint x="3.927051067352295" y="2.6180338859558105" z="4.736067771911621"/>
         <UpDirection x="-0.2628655731678009" y="-0.9510565400123596" z="0.1624598503112793"/>

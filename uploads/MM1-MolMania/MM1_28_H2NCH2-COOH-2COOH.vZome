@@ -419,7 +419,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Aspartic Acid" snapshot="12">
+    <page title="Aspartic Acid" snapshot="12">
       <ViewModel distance="62.574067972913454" far="125.14813594582691" near="0.057938951826771716" parallel="false" stereoAngle="0.0" width="28.158330587811054">
         <LookAtPoint x="14.89476821836497" y="1.0049447137545648" z="9.572490771792017"/>
         <UpDirection x="-0.2814882568740944" y="-0.9589952183745529" z="0.03305347752850418"/>

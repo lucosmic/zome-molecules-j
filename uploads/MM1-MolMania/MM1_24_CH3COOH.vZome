@@ -360,7 +360,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Acetic Acid" snapshot="9">
+    <page title="Acetic Acid" snapshot="9">
       <ViewModel distance="39.015211480432306" far="78.03042296086461" near="0.0361251958152151" parallel="false" stereoAngle="0.0" width="17.556845166194538">
         <LookAtPoint x="4.525771656630002" y="0.48554839156845564" z="4.233735430378851"/>
         <UpDirection x="0.6046828814240772" y="0.7963688924566503" z="-0.012457930809115312"/>

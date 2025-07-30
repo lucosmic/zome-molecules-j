@@ -297,7 +297,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Acrylonitrile" snapshot="8">
+    <page title="Acrylonitrile" snapshot="8">
       <ViewModel distance="55.127201624292816" far="110.25440324858563" near="0.051043705207678536" parallel="false" stereoAngle="0.0" width="24.807240730931767">
         <LookAtPoint x="4.245543349032417" y="2.2800518354760317" z="-0.8021953917806399"/>
         <UpDirection x="0.9711351033779319" y="-0.2333809240486736" z="0.049294576550955684"/>

@@ -457,7 +457,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Urea" snapshot="13">
+    <page title="Urea" snapshot="13">
       <ViewModel distance="50.654590324625616" far="101.30918064925123" near="0.04690239844872742" parallel="false" stereoAngle="0.0" width="22.794565646081526">
         <LookAtPoint x="3.383863090260496" y="1.6032802372163661" z="5.5506353099265215"/>
         <UpDirection x="0.9748266746795924" y="-0.18955198390759645" z="-0.11740102099141696"/>

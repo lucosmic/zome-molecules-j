@@ -406,7 +406,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Hydrogen Peroxide" snapshot="8">
+    <page title="Hydrogen Peroxide" snapshot="8">
       <ViewModel distance="34.92335330783168" far="69.84670661566336" near="0.0323364382479923" parallel="false" stereoAngle="0.0" width="15.715508988524258">
         <LookAtPoint x="3.927051067352295" y="1.3090169429779053" z="3.927051067352295"/>
         <UpDirection x="0.40824830532073975" y="-0.40824830532073975" z="-0.8164966106414795"/>

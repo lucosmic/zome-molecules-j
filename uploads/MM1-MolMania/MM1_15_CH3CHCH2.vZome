@@ -339,7 +339,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Propylene" snapshot="8">
+    <page title="Propylene" snapshot="8">
       <ViewModel distance="45.5984940604029" far="91.1969881208058" near="0.04222082783370639" parallel="false" stereoAngle="0.0" width="20.519322327181307">
         <LookAtPoint x="4.36338996887207" y="-0.8726779818534851" z="4.36338996887207"/>
         <UpDirection x="0.89783587154795" y="0.3232358681803463" z="0.29901394555470523"/>

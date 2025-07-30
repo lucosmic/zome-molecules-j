@@ -73,7 +73,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Hydrogen Gas" snapshot="1">
+    <page title="Hydrogen Gas" snapshot="1">
       <ViewModel distance="21.8328217418365" far="43.665643483673" near="0.02021557568688565" parallel="false" stereoAngle="0.0" width="9.824769783826426">
         <LookAtPoint x="1.3090169429779053" y="1.3090169429779053" z="1.3090169429779053"/>
         <UpDirection x="-0.11026408523321152" y="0.7557613253593445" z="-0.64549720287323"/>

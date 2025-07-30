@@ -391,7 +391,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Glycine" snapshot="11">
+    <page title="Glycine" snapshot="11">
       <ViewModel distance="40.54558810027582" far="81.09117620055164" near="0.0375422112039591" parallel="false" stereoAngle="0.0" width="18.24551464512412">
         <LookAtPoint x="5.261351887935829" y="-1.168892015694527" z="5.129671138706023"/>
         <UpDirection x="0.05852812707890518" y="-0.997651053901053" z="-0.03559259741508945"/>

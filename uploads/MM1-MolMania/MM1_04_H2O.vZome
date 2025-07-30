@@ -117,7 +117,7 @@
     </ViewModel>
   </Viewing>
   <notes>
-    <page title=" Water" snapshot="2">
+    <page title="Water" snapshot="2">
       <ViewModel distance="24.253703160291703" far="48.50740632058341" near="0.02245713255582565" parallel="false" stereoAngle="0.0" width="10.914166422131267">
         <LookAtPoint x="0.8726779818534851" y="2.6180338859558105" z="2.6180338859558105"/>
         <UpDirection x="-1" y="0" z="0"/>
