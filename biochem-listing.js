@@ -1,25 +1,37 @@
 // biochem-listing.js
-import { models } from './biochemistry-models-r2.js';
+import { models } from './biochemistry-models-r3.js';
 
 const table = document.getElementById("partsTable");
 const tbody = table.createTBody();
 const viewer = document.getElementById("viewer");
-const showEdges = document.getElementById("showEdges");
+const showRgroup = document.getElementById("showRgroup");
 const zomeSwitch = document.getElementById( "zome-switch" );
 const indexModel = document.getElementById("model-index");
 let selectedRow = null;
 
-for (const model of models) {
-  const tr = tbody.insertRow();
-  fillRow(tr, model);
-  tr.addEventListener("click", () => selectModel(model, tr));
+let hasInitialized = false;
+function initializeApp() {
+	if (hasInitialized) {
+		console.log("App already initialized..");
+		return
+	}
+	for (const model of models) {
+		const tr = tbody.insertRow();
+		fillRow(tr, model);
+		tr.addEventListener("click", () => selectModel(model, tr));
+	}
+	let initialId = 2;
+	const initialRow = tbody.rows[initialId];
+	selectModel(models[initialId], initialRow);
+	console.log("App initialized!");
+	hasInitialized = true;
 }
-var initialId = 1;
-const initialRow = tbody.rows[initialId]
-selectModel(models[initialId], initialRow)
+
+initializeApp();
+
 
 function fillRow(tr, model) {
-  const { id, form_ansi, name, molec_type, category } = model;
+  const { id, form_ansi, name, molec_type, category, mass, abbrev_three } = model;
   tr.dataset.url = model.url;
   tr.dataset.scene = name;
   tr.dataset.rgroupscene = molec_type === 'AA-R' ? `${name} R-group` : "";
@@ -28,7 +40,7 @@ function fillRow(tr, model) {
 
   let td = tr.insertCell();
   td.className = "ident done";
-  td.textContent = id;
+  td.textContent = abbrev_three;
 
   td = tr.insertCell();
   td.className = "molec-form";
@@ -58,28 +70,35 @@ function selectModel(model, tr) {
   selectedRow = tr;
   selectedRow.classList.add("selected");
   indexModel.textContent = model.name;
+
+  console.log(`Trying to load model ${model.url} ...`)
   viewer.src = model.url;
+  
   setScene(tr.dataset);
 }
 
-showEdges.addEventListener("change", () => {
+showRgroup.addEventListener("change", () => {
   if (selectedRow) setScene(selectedRow.dataset);
 });
 
 viewer .addEventListener( "vzome-scenes-discovered", (e) => {
   // Just logging this to the console for now. Not actually using the scenes list.
   const scenes = e.detail;
-  //console.log( "These scenes were discovered in " + viewer.src);
+  console.log( "These scenes were discovered in " + viewer.src);
   console.log( JSON.stringify( scenes, null, 2 ) );
 } );
 
 
 function setScene(data) {
   
-	const scene = showEdges.checked && data.rgroupscene ? data.rgroupscene : data.scene;
+	var scene = showRgroup.checked && data.rgroupscene ? data.rgroupscene : data.scene;
 	
 	zomeSwitch.className = (data.rgroupscene.length > 2) ? 'rgrp' : 'no-rgrp';
+
+	console.log(`Trying to load scene ${scene} ...`);
 	viewer.scene = scene;
+
+	
 
   	viewer.update();
 }
