@@ -48,7 +48,7 @@ function fillRow(tr, model) {
 
   td = tr.insertCell();
   td.className = "category";
-  td.textContent = category;
+  td.textContent = molec_type + " - " + category;
 }
 
 function selectModel(model, tr) {
