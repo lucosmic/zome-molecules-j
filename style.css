@@ -40,6 +40,7 @@ html, body {
   grid-template-rows: min-content minmax( 0, 1fr );
   grid-template-areas:
     "intro intro refs"
+    /* "descrip viewer viewer" /*TODO:Add description for this molecule card */
     "table viewer viewer";
   gap: 7px;
   height: 100vh;
