@@ -64,6 +64,13 @@ html, body {
   height: 99%;
 }
 
+.table {
+  grid-area: table; /* added for the grid above */
+  overflow: auto;
+  margin-block-end: 8px;
+  margin-inline-start: 8px;
+}
+
 .label {
   cursor: default; /* disable the "I-beam" text cursor */
   position: absolute;
@@ -72,11 +79,13 @@ html, body {
   left: 2rem;
 }
 
-.table {
-  grid-area: table; /* added for the grid above */
-  overflow: auto;
-  margin-block-end: 8px;
-  margin-inline-start: 8px;
+
+
+.label,
+#zome-switch {
+  background-color: rgba(243, 243, 243, 0.7);
+  padding: 0.5rem 0.5rem;
+  border-radius: 1rem;
 }
 
 #zome-switch {
@@ -116,6 +125,8 @@ input[type=checkbox]
 #zome-switch.rgrp {
   display: flex;
 }
+
+
 
 /*
   This CSS originally copied largely as-is from:
