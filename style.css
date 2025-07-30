@@ -14,6 +14,11 @@
   --color-red-strut: rgb(175, 0, 0);
   --color-grn-strut: rgb(0, 141, 54);
 
+  --color-teal-dark: rgb(0, 174, 197);
+  --color-teal-lite: rgb(183, 241, 250);
+  --color-red-dark: rgb(207, 0, 0);
+  --color-red-lite: rgb(253, 158, 158);
+
   --color-blu-panel: rgb(127, 186, 202);
   --color-yel-panel: rgb(247, 207, 127);
   --color-red-panel: rgb(215, 127, 127);
@@ -31,7 +36,7 @@ html, body {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 29.2rem minmax( 0, 1fr );
+  grid-template-columns: 35rem minmax( 0, 1fr );
   grid-template-rows: min-content minmax( 0, 1fr );
   grid-template-areas:
     "intro intro refs"
@@ -69,6 +74,8 @@ html, body {
   overflow: auto;
   margin-block-end: 8px;
   margin-inline-start: 8px;
+
+
 }
 
 .label {
@@ -139,14 +146,15 @@ input[type=checkbox]
 table {
   border-spacing: 0;
   cursor: default; /* disable the "I-beam" text cursor */
-  table-layout: fixed;
+  table-layout: auto;
   width: 100%;
+
 }
 
 thead th:nth-child(1)   /* id column */
 {
   text-align: center;
-  width: 4ch;
+  /*width: 4ch;*/
 }
 tbody td:nth-child(1)   /* id column */
 {
@@ -179,7 +187,7 @@ th.title, th.molec-form, th.category {
 }
 
 th.ident, td.ident {
-  width: 45ch; /* J77 and J78 have 45 characters in their names. No others are longer. */
+  /*width: 45ch; /* J77 and J78 have 45 characters in their names. No others are longer. */
 }
 
 td.todo {
@@ -187,22 +195,33 @@ td.todo {
   font-style: italic;
 }
 
-td.title, td.molec-form {
+/*td.title, td.molec-form*/
+td {
   background-color: var(--color-yel-panel);
 }
 tr.selected > td {
+  /* default color if no other molecule type is specified*/
   background-color: var(--color-yel-strut);
+
+  font-style: italic;
+  font-weight: bold;
 }
 
-td.title.zometool, td.molec-form.zometool {
-  background-color: var(--color-blu-panel);
+tr.molec-aa > td {
+  background-color: var(--color-teal-lite);
+}
+tr.molec-dn > td, tr.molec-rn >td {
+  background-color: var(--color-red-lite);
+}
+
+
+tr.selected.molec-aa > td {
+  background-color: var(--color-teal-dark);
   font-style: italic;
   font-weight: bold;
 }
-tr.selected > td.zometool {
-  background-color: var(--color-blu-strut);
-  font-style: italic;
-  font-weight: bold;
+tr.selected.molec-dn > td, tr.selected.molec-rn >td {
+  background-color: var(--color-red-dark);
 }
 
 th
