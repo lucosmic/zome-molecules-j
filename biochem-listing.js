@@ -14,6 +14,9 @@ for (const model of models) {
   fillRow(tr, model);
   tr.addEventListener("click", () => selectModel(model, tr));
 }
+var initialId = 1;
+const initialRow = tbody.rows[initialId]
+selectModel(models[initialId], initialRow)
 
 function fillRow(tr, model) {
   const { id, form_ansi, name, molec_type, category } = model;
