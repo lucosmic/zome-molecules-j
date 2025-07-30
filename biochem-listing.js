@@ -93,7 +93,7 @@ function fillRow(tr, model) {
   	td.textContent = model.molec_type + " - " + category;
   } else if ("poly" in model) {
 	//Molecular Modeling cards
-	td.textContent = category + " - " + model.poly;
+	td.textContent = category + ( (model.poly.length > 2) ? " - " + model.poly : "");
   } else {
 	td.textContent = category;
   }
