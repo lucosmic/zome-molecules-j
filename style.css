@@ -36,7 +36,7 @@ html, body {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 35rem minmax( 0, 1fr );
+  grid-template-columns: 37em minmax( 0, 1fr );
   grid-template-rows: min-content minmax( 0, 1fr );
   grid-template-areas:
     "intro intro refs"
@@ -74,7 +74,6 @@ html, body {
   overflow: auto;
   margin-block-end: 8px;
   margin-inline-start: 8px;
-
 
 }
 
@@ -149,7 +148,7 @@ table {
   cursor: default; /* disable the "I-beam" text cursor */
   table-layout: auto;
   width: 100%;
-
+  font-size: smaller;
 }
 
 thead th:nth-child(1)   /* id column */
@@ -174,7 +173,7 @@ th,
 td {
   border: 1px solid gray;
   padding: 3px;
-  padding-right: 0.7em;
+  padding-right: 0.4em;
   white-space: nowrap;
   
 }
@@ -190,6 +189,7 @@ th:not(.ident) {
 
 tr.ident td.ident {
   background-color: var(--color-ident);
+  font-size: large;
   /*width: 45ch; /* J77 and J78 have 45 characters in their names. No others are longer. */
 }
 
@@ -198,7 +198,13 @@ td.todo {
   font-style: italic;
 }
 
-/*td.title, td.molec-form*/
+td.ident td.molec-mass {
+  font-size: large;
+}
+td.category {
+  font-size: smaller;
+}
+
 td {
   background-color: var(--color-yel-panel);
 }

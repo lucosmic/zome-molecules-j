@@ -68,6 +68,12 @@ function fillRow(tr, model) {
   td.className = "molec-mass";
   td.textContent = mass;
 
+  
+
+  td = tr.insertCell();
+  td.className = "title";
+  td.textContent = name;
+
   td = tr.insertCell();
   td.className = "molec-form";
   //td.innerHTML = form_ansi.replace(/([0-9]+)/g, '<sub>$1</sub>');
@@ -81,10 +87,6 @@ function fillRow(tr, model) {
     formula = formula.replace(/([0-9]+)/g, '<sub>$1</sub>');
   }
   td.innerHTML = formula;
-
-  td = tr.insertCell();
-  td.className = "title";
-  td.textContent = name;
 
   td = tr.insertCell();
   td.className = "category";

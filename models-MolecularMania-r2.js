@@ -25,7 +25,7 @@ export const MM1_models = [
 { id:23, name:"Isopropanol", form_ansi:"CH3CHOHCH3", description:"", category:"Liquid", poly:"", mass:"60", url:"uploads/MM1-MolMania/MM1_23_CH3CHOHCH3.vZome"},
 { id:24, name:"Acetic Acid", form_ansi:"CH3COOH", description:"", category:"Liquid", poly:"Monomer", mass:"60", url:"uploads/MM1-MolMania/MM1_24_CH3COOH.vZome"},
 { id:25, name:"Carbonic Acid", form_ansi:"CO(OH)2", description:"", category:"Aqueous", poly:"", mass:"62", url:"uploads/MM1-MolMania/MM1_25_CO-OH-2.vZome"},
-{ id:26, name:"Butanol", form_ansi:"CH3CH2CH2CH2OH", description:"", category:"Liquid", poly:"", mass:"74", url:"uploads/MM1-MolMania/MM1_26_CH3CH2CH2CH2OH.vZome"},
+{ id:26, name:"Butanol", form_ansi:"<small>CH3CH2CH2CH2OH</small>", description:"", category:"Liquid", poly:"", mass:"74", url:"uploads/MM1-MolMania/MM1_26_CH3CH2CH2CH2OH.vZome"},
 //{ id:27, name:"Glycine", form_ansi:"H2NCH2COOH", description:"", category:"Solid", poly:"Monomer", mass:"75", url:"uploads/MM1-MolMania/MM1_27_H2NCH2COOH.vZome"},
 //{ id:28, name:"Aspartic Acid", form_ansi:"H2NCH(COOH)CH2COOH", description:"", category:"Solid", poly:"Monomer", mass:"133", url:"uploads/MM1-MolMania/MM1_28_H2NCH2-COOH-2COOH.vZome"},
 
