@@ -1,0 +1,33 @@
+export const MM1_models = [
+  //first 28 models can be the MolMania types. 
+{ id:1, name:"Hydrogen Gas", form_ansi:"H2", description:"", category:"Gas", poly:"", mass:"2", url:"uploads/MM1-MolMania/MM1_01_H2.vZome"},
+{ id:2, name:"Methane", form_ansi:"CH4", description:"", category:"Gas", poly:"", mass:"16", url:"uploads/MM1-MolMania/MM1_02_CH4.vZome"},
+{ id:3, name:"Ammonia", form_ansi:"NH3", description:"", category:"Gas", poly:"", mass:"17", url:"uploads/MM1-MolMania/MM1_03_NH3.vZome"},
+{ id:4, name:"Water", form_ansi:"H2O", description:"", category:"Liquid", poly:"", mass:"18", url:"uploads/MM1-MolMania/MM1_04_H2O.vZome"},
+{ id:5, name:"Ammonium", form_ansi:"NH4i+", description:"", category:"Aqueous/Ion in solution", poly:"Monomer", mass:"18", url:"uploads/MM1-MolMania/MM1_05_NH4+.vZome"},
+{ id:6, name:"Acetylene", form_ansi:"CHCH", description:"", category:"Gas", poly:"Monomer", mass:"26", url:"uploads/MM1-MolMania/MM1_06_CHCH.vZome"},
+{ id:7, name:"Hydrogen Cyanide", form_ansi:"HCN", description:"", category:"Gas", poly:"", mass:"27", url:"uploads/MM1-MolMania/MM1_07_HCN.vZome"},
+{ id:8, name:"Ethylene", form_ansi:"CH2CH2", description:"", category:"Gas", poly:"Monomer", mass:"28", url:"uploads/MM1-MolMania/MM1_08_CH2CH2.vZome"},
+{ id:9, name:"Nitrogen Gas", form_ansi:"N2", description:"", category:"Gas", poly:"", mass:"28", url:"uploads/MM1-MolMania/MM1_09_N2.vZome"},
+{ id:10, name:"Formaldehyde", form_ansi:"CH2O", description:"", category:"Gas (often in solution)", poly:"Monomer", mass:"30", url:"uploads/MM1-MolMania/MM1_10_CH2O.vZome"},
+{ id:11, name:"Ethane", form_ansi:"CH3CH3", description:"", category:"Gas", poly:"", mass:"30", url:"uploads/MM1-MolMania/MM1_11_CH3CH3.vZome"},
+{ id:12, name:"Methanol", form_ansi:"CH3OH", description:"", category:"Liquid", poly:"", mass:"32", url:"uploads/MM1-MolMania/MM1_12_CH3OH.vZome"},
+{ id:13, name:"Oxygen Gas", form_ansi:"O2", description:"", category:"Gas", poly:"", mass:"32", url:"uploads/MM1-MolMania/MM1_13_O2.vZome"},
+{ id:14, name:"Hydrogen Peroxide", form_ansi:"H2O2", description:"", category:"Liquid", poly:"", mass:"34", url:"uploads/MM1-MolMania/MM1_14_H2O2.vZome"},
+{ id:15, name:"Propylene", form_ansi:"CH3CHCH2", description:"", category:"Gas", poly:"Monomer", mass:"42", url:"uploads/MM1-MolMania/MM1_15_CH3CHCH2.vZome"},
+{ id:16, name:"Propane", form_ansi:"CH3CH2CH3", description:"", category:"Gas", poly:"Monomer", mass:"44", url:"uploads/MM1-MolMania/MM1_16_CH3CH2CH3.vZome"},
+{ id:17, name:"Carbon Dioxide", form_ansi:"CO2", description:"", category:"Gas", poly:"", mass:"44", url:"uploads/MM1-MolMania/MM1_17_CO2.vZome"},
+{ id:18, name:"Ethanol", form_ansi:"CH3CH2OH", description:"", category:"Liquid", poly:"", mass:"46", url:"uploads/MM1-MolMania/MM1_18_CH3CH2OH.vZome"},
+{ id:19, name:"Acrylonitrile", form_ansi:"CH2CHCN", description:"", category:"Liquid", poly:"Monomer", mass:"53", url:"uploads/MM1-MolMania/MM1_19_CH2CHCN.vZome"},
+{ id:20, name:"Butane", form_ansi:"CH3CH2CH2CH3", description:"", category:"Gas", poly:"", mass:"58", url:"uploads/MM1-MolMania/MM1_20_CH3CH2CH2CH3.vZome"},
+{ id:21, name:"Urea", form_ansi:"(NH2)2CO", description:"", category:"Solid", poly:"Monomer", mass:"60", url:"uploads/MM1-MolMania/MM1_21_-NH2-2CO.vZome"},
+{ id:22, name:"Propanol", form_ansi:"CH3CH2CH2OH", description:"", category:"Liquid", poly:"", mass:"60", url:"uploads/MM1-MolMania/MM1_22_CH3CH2CH2OH.vZome"},
+{ id:23, name:"Isopropanol", form_ansi:"CH3CHOHCH3", description:"", category:"Liquid", poly:"", mass:"60", url:"uploads/MM1-MolMania/MM1_23_CH3CHOHCH3.vZome"},
+{ id:24, name:"Acetic Acid", form_ansi:"CH3COOH", description:"", category:"Liquid", poly:"Monomer", mass:"60", url:"uploads/MM1-MolMania/MM1_24_CH3COOH.vZome"},
+{ id:25, name:"Carbonic Acid", form_ansi:"CO(OH)2", description:"", category:"Aqueous (in solution)", poly:"", mass:"62", url:"uploads/MM1-MolMania/MM1_25_CO-OH-2.vZome"},
+{ id:26, name:"Butanol", form_ansi:"CH3CH2CH2CH2OH", description:"", category:"Liquid", poly:"", mass:"74", url:"uploads/MM1-MolMania/MM1_26_CH3CH2CH2CH2OH.vZome"},
+{ id:27, name:"Glycine", form_ansi:"H2NCH2COOH", description:"", category:"Solid", poly:"Monomer", mass:"75", url:"uploads/MM1-MolMania/MM1_27_H2NCH2COOH.vZome"},
+{ id:28, name:"Aspartic Acid", form_ansi:"H2NCH(COOH)CH2COOH", description:"", category:"Solid", poly:"Monomer", mass:"133", url:"uploads/MM1-MolMania/MM1_28_H2NCH2-COOH-2COOH.vZome"},
+
+  
+]

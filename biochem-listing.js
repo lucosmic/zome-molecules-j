@@ -1,6 +1,8 @@
 // biochem-listing.js
-import { models } from './biochemistry-models-r3.js';
+import { BIO_models } from './models-biochemistry-r3.js';
+import { MM1_models } from './models-MolecularMania-r2.js';
 
+const models_combined = MM1_models.concat(BIO_models);//{ ...MM1_models, ...BIO_models};//Object.assign({}, BIO_models, MM1_models);
 const table = document.getElementById("partsTable");
 const tbody = table.createTBody();
 const viewer = document.getElementById("viewer");
@@ -15,14 +17,21 @@ function initializeApp() {
 		console.log("App already initialized..");
 		return
 	}
-	for (const model of models) {
+	
+	for (const model of models_combined) {
 		const tr = tbody.insertRow();
 		fillRow(tr, model);
 		tr.addEventListener("click", () => selectModel(model, tr));
 	}
+	/*
+	for (const model of BIO_models) {
+		const tr = tbody.insertRow();
+		fillRow(tr, model);
+		tr.addEventListener("click", () => selectModel(model, tr));
+	}*/
 	let initialId = 2;
 	const initialRow = tbody.rows[initialId];
-	selectModel(models[initialId], initialRow);
+	selectModel(models_combined[initialId], initialRow);
 	console.log("App initialized!");
 	hasInitialized = true;
 }
@@ -31,16 +40,29 @@ initializeApp();
 
 
 function fillRow(tr, model) {
-  const { id, form_ansi, name, molec_type, category, mass, abbrev_three } = model;
+  const { form_ansi, name, category, mass } = model;
   tr.dataset.url = model.url;
   tr.dataset.scene = name;
-  tr.dataset.rgroupscene = molec_type === 'AA-R' ? `${name} R-group` : "";
 
-  tr.classList.add("molec-" +  molec_type.substring(0,2).toLowerCase() );
+  if("molec_type" in model) {
+	//Biochem (Amino Acid)
+	tr.dataset.rgroupscene = model.molec_type === 'AA-R' ? `${name} R-group` : "";
+	tr.classList.add("molec-" +  model.molec_type.substring(0,2).toLowerCase() );
+  } else {
+	//doesn't have a molecule type. May be a Molecular Mania model instead of Biochem. 
+	tr.dataset.rgroupscene = "";
+	tr.classList.add("molec-mm");
+  }
 
   let td = tr.insertCell();
   td.className = "ident done";
-  td.textContent = abbrev_three;
+  if("abbrev_three" in model) {
+	td.textContent = model.abbrev_three;
+  } else {
+	//doesn't have a TLA. May be a Molecular Mania model instead of Biochem.
+	td.textContent = model.id;
+  }
+  
 
   td = tr.insertCell();
   td.className = "molec-mass";
@@ -66,7 +88,15 @@ function fillRow(tr, model) {
 
   td = tr.insertCell();
   td.className = "category";
-  td.textContent = molec_type + " - " + category;
+  if("molec_type" in model) {
+	//Biochem cards
+  	td.textContent = model.molec_type + " - " + category;
+  } else if ("poly" in model) {
+	//Molecular Modeling cards
+	td.textContent = category + " - " + model.poly;
+  } else {
+	td.textContent = category;
+  }
 }
 
 function selectModel(model, tr) {
@@ -97,7 +127,8 @@ viewer .addEventListener( "vzome-scenes-discovered", (e) => {
 
 
 function setScene(data) {
-  
+	
+
 	var scene = showRgroup.checked && data.rgroupscene ? data.rgroupscene : data.scene;
 	
 	zomeSwitch.className = (data.rgroupscene.length > 2) ? 'rgrp' : 'no-rgrp';
@@ -107,5 +138,10 @@ function setScene(data) {
 
 	
 	console.log("Update viewer...");
-  	viewer.update();
+	try {
+		viewer.update();
+	} catch (Error) {
+		console.log("Likely no .scenes.json file..")
+	}
+  	
 }
