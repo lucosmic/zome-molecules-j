@@ -282,11 +282,9 @@ viewer .addEventListener( "vzome-scenes-discovered", (e) => {
   console.log( JSON.stringify( scenes, null, 2 ) );
 } );
 
-
-//line 7 of tetras
 for (const jsolid of models) {
   const tr = tbody.insertRow();
-  fillRow(tr,  jsolid);
+  fillRow(tr, jsolid);
   tr.addEventListener("click", () => selectJohnsonSolid( jsolid, tr ) );
 }
 
@@ -338,13 +336,6 @@ function fillRow(tr, jsolid) {
   let td = tr.insertCell();
   td.className = url ? "ident done" : "ident todo";
   td.innerHTML = "J" + id;
-  //Formula Column
-  td = tr.insertCell();
-  td.className = "molec-form";
-  if(field == "Golden" && zometool == "true" && url) {
-    td.className += " zometool";
-  }
-  td.innerHTML = "BRO"
   // title column
   td = tr.insertCell();
   td.className = "title";
