@@ -24,7 +24,7 @@
   --color-red-panel: rgb(215, 127, 127);
   --color-grn-panel: rgb(127, 198, 154);
 
-  --checbox-scale: 1.75;
+  --checbox-scale: 1.25;
 }
 
 html, body {
@@ -84,6 +84,7 @@ html, body {
   z-index: 300;
   top: 0.3rem;
   left: 2rem;
+  padding-right: 0.5em;
 }
 
 
@@ -113,7 +114,7 @@ input[type=checkbox]
   -webkit-transform: scale(var(--checbox-scale)); /* Safari and Chrome */
   -o-transform: scale(var(--checbox-scale)); /* Opera */
   transform: scale(var(--checbox-scale));
-  padding: 2px;
+  margin-left: 0.5em;
 }
 
 #showEdges {
