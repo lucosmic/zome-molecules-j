@@ -43,6 +43,10 @@ function fillRow(tr, model) {
   td.textContent = abbrev_three;
 
   td = tr.insertCell();
+  td.className = "molec-mass";
+  td.textContent = mass;
+
+  td = tr.insertCell();
   td.className = "molec-form";
   //td.innerHTML = form_ansi.replace(/([0-9]+)/g, '<sub>$1</sub>');
   let formula = form_ansi;
