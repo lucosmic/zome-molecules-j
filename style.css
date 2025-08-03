@@ -36,7 +36,7 @@ html, body {
 
 .main-grid {
   display: grid;
-  grid-template-columns: 37em minmax( 0, 1fr );
+  grid-template-columns: minmax(min-content, 1fr) minmax( 0, 1fr );
   grid-template-rows: min-content minmax( 0, 1fr );
   grid-template-areas:
     "intro intro refs"
@@ -44,7 +44,7 @@ html, body {
     "table viewer viewer";
   gap: 7px;
   height: 100vh;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: auto;
 }
 
@@ -68,6 +68,8 @@ html, body {
 #viewer {
   width: 99%;
   height: 99%;
+  /* aspect-ratio: minmax(0.33,3); */
+
 }
 
 .table {
@@ -298,18 +300,30 @@ tfoot td {
   );
 }
 
-@media ( max-aspect-ratio: 12/10 ) {
+@media ( max-aspect-ratio: 10/10 ) {
 
   .main-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content minmax( 0, 5fr ) minmax( 0, 3fr );
+    /* grid-template-rows: min-content minmax( 0, 5fr ) minmax( 0, 3fr ); */
+    grid-template-rows: min-content min-content minmax( 0, 3fr ) 2.5fr;
     grid-template-areas:
       "intro"
       "viewer"
-      "table";
-    height: 100vh;
+      "table"
+      "refs";
+    height: 120vh;
     margin: auto;
+  }
+
+  
+  .viewer {
+    height: 70dvw;
+    max-height: 60dvh;
+    text-align: center;
+  }
+  .label{
+    font-size: 3dvw;
   }
 
   .intro h1 {
@@ -323,9 +337,9 @@ tfoot td {
     grid-area: intro;
   }
   
-  .intro-text,
+  /* .intro-text,
   .references {
     display: none;
-  }
+  } */
   
 }
