@@ -117,15 +117,51 @@ showRgroup.addEventListener("change", () => {
   if (selectedRow) setScene(selectedRow.dataset);
 });
 
+
+let scenes;
+
 viewer .addEventListener( "vzome-scenes-discovered", (e) => {
   // Logging this to the console for now. Not actually using the scenes list.
-  const scenes = e.detail;
+  scenes = e.detail;
   console.log( "These scenes were discovered in " + viewer.src);
   console.log( JSON.stringify( scenes, null, 2 ) );
   //Now that scenes are discovered, update viewer. Again.
   console.log("Update viewer after scene load...");
   viewer.update();
 } );
+
+const descText = document.getElementById("description-text");
+
+viewer.addEventListener("vzome-scenes", ({ detail }) => {
+  scenes = [...detail];
+  console.log(`LBC vZome Scenes!`);
+});
+viewer.addEventListener("vzome-design-rendered", ({ detail: scene }) => {
+  const { index } = scene;
+  console.log(`LBC vZome Design rendered!`);
+  // titleText.innerHTML = scenes[index].title;
+  descText.innerHTML = scenes[index].content;
+});
+
+/* ChatGPT below doesn't do anything yet */
+viewer.addEventListener("vzome-notes-loaded", e => {
+  
+  const notes = e.detail;
+
+  console.log(`Notes loaded! \n The notes are: ${notes}`);
+
+  if (Array.isArray(notes) && notes.length > 0) {
+    const { title, content } = notes[0];
+    descText.textContent = `${title}\n\n${content}`;
+  } else {
+    descText.textContent = "No description available.";
+  }
+});
+viewer.addEventListener("vzome-design-xml-parsed", e => {
+    const xmlTree = e.detail;
+  console.log(`XML tree parsed!`)
+});
+
 
 
 function setScene(data) {

@@ -32,15 +32,17 @@ html, body {
   width: 100%;
   margin: 0; /* This is essential to avoid a small white border around the whole main div. */
   user-select: none;
+  font-family: 'Karla', Helvetica, sans-serif;
+  color: #646464;
 }
 
 .main-grid {
   display: grid;
   grid-template-columns: minmax(min-content, 1fr) minmax( 0, 1fr );
-  grid-template-rows: min-content minmax( 0, 1fr );
+  grid-template-rows: min-content min-content minmax( 0, 1fr );
   grid-template-areas:
     "intro intro refs"
-    /* "descrip viewer viewer" /*TODO:Add description for this molecule card */
+    "descrip viewer viewer" /*TODO:Add description for this molecule card */
     "table viewer viewer";
   gap: 7px;
   height: 100vh;
@@ -57,6 +59,9 @@ html, body {
 .references {
   grid-area: refs;
   min-width: 320px;
+  background-color: rgba(240, 240, 240, 0.85);
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
 }
 
 .viewer {
@@ -70,6 +75,32 @@ html, body {
   height: 99%;
   /* aspect-ratio: minmax(0.33,3); */
 
+}
+
+.description-box {
+  grid-area: descrip;
+  margin-inline: 2rem;
+  margin-top: 0.5rem;
+}
+
+#model-description {
+  background-color: rgba(240, 240, 240, 0.85);
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.9rem;
+  max-width: 800px;
+  /* Since this is EXPERIEMNTAL, set to display:none for the main branch build until it works */
+  display: none; 
+}
+
+#model-description summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#description-text {
+  margin-top: 0.5rem;
+  white-space: pre-line;
 }
 
 .table {
@@ -306,10 +337,11 @@ tfoot td {
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: min-content minmax( 0, 5fr ) minmax( 0, 3fr ); */
-    grid-template-rows: min-content min-content minmax( 0, 3fr ) 2.5fr;
+    grid-template-rows: min-content min-content min-content minmax( 0, 3fr ) 2.5fr;
     grid-template-areas:
       "intro"
       "viewer"
+      "descrip"
       "table"
       "refs";
     height: 120vh;
@@ -320,10 +352,11 @@ tfoot td {
   .viewer {
     height: 70dvw;
     max-height: 60dvh;
+    min-height: 240px;
     text-align: center;
   }
   .label{
-    font-size: 3dvw;
+    font-size: 5dvw;
   }
 
   .intro h1 {
