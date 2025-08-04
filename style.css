@@ -24,7 +24,7 @@
   --color-red-panel: rgb(215, 127, 127);
   --color-grn-panel: rgb(127, 198, 154);
 
-  --checbox-scale: 1.25;
+  --checkbox-scale: 1.25;
 }
 
 html, body {
@@ -111,11 +111,11 @@ input[type=checkbox]
 {
   /* Resized Checkboxes */
   /* See other approaches at https://stackoverflow.com/questions/306924/can-i-change-the-checkbox-size-using-css */
-  -ms-transform: scale(var(--checbox-scale)); /* IE */
-  -moz-transform: scale(var(--checbox-scale)); /* FF */
-  -webkit-transform: scale(var(--checbox-scale)); /* Safari and Chrome */
-  -o-transform: scale(var(--checbox-scale)); /* Opera */
-  transform: scale(var(--checbox-scale));
+  -ms-transform: scale(var(--checkbox-scale)); /* IE */
+  -moz-transform: scale(var(--checkbox-scale)); /* FF */
+  -webkit-transform: scale(var(--checkbox-scale)); /* Safari and Chrome */
+  -o-transform: scale(var(--checkbox-scale)); /* Opera */
+  transform: scale(var(--checkbox-scale));
   margin-left: 0.5em;
 }
 

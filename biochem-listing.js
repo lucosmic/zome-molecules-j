@@ -44,31 +44,31 @@ function fillRow(tr, model) {
   tr.dataset.url = model.url;
   tr.dataset.scene = name;
 
-  if("molec_type" in model) {
-	//Biochem (Amino Acid)
-	tr.dataset.rgroupscene = model.molec_type === 'AA-R' ? `${name} R-group` : "";
-	tr.classList.add("molec-" +  model.molec_type.substring(0,2).toLowerCase() );
+  if ("molec_type" in model) {
+    //Biochem (Amino Acid)
+    tr.dataset.rgroupscene = model.molec_type === 'AA-R' ? `${name} R-group` : "";
+    tr.classList.add("molec-" + model.molec_type.substring(0, 2).toLowerCase());
   } else {
-	//doesn't have a molecule type. May be a Molecular Mania model instead of Biochem. 
-	tr.dataset.rgroupscene = "";
-	tr.classList.add("molec-mm");
+    //doesn't have a molecule type. May be a Molecular Mania model instead of Biochem. 
+    tr.dataset.rgroupscene = "";
+    tr.classList.add("molec-mm");
   }
 
   let td = tr.insertCell();
   td.className = "ident done";
-  if("abbrev_three" in model) {
-	td.textContent = model.abbrev_three;
+  if ("abbrev_three" in model) {
+    td.textContent = model.abbrev_three;
   } else {
-	//doesn't have a TLA. May be a Molecular Mania model instead of Biochem.
-	td.textContent = model.id;
+    //doesn't have a TLA. May be a Molecular Mania model instead of Biochem.
+    td.textContent = model.id;
   }
-  
+
 
   td = tr.insertCell();
   td.className = "molec-mass";
   td.textContent = mass;
 
-  
+
 
   td = tr.insertCell();
   td.className = "title";
@@ -90,14 +90,14 @@ function fillRow(tr, model) {
 
   td = tr.insertCell();
   td.className = "category";
-  if("molec_type" in model) {
-	//Biochem cards
-  	td.textContent = model.molec_type + " - " + category;
+  if ("molec_type" in model) {
+    //Biochem cards
+    td.textContent = model.molec_type + " - " + category;
   } else if ("poly" in model) {
-	//Molecular Modeling cards
-	td.textContent = category + ( (model.poly.length > 2) ? " - " + model.poly : "");
+    //Molecular Modeling cards
+    td.textContent = category + ((model.poly.length > 2) ? " - " + model.poly : "");
   } else {
-	td.textContent = category;
+    td.textContent = category;
   }
 }
 
